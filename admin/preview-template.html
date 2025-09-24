@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Preview</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Preview</title>
+  </head>
 <body>
-  <div id="root"></div>
+  <div id="preview-root"></div>
   <script>
-    const root = document.getElementById('root');
+    const previewRoot = document.getElementById('preview-root');
     window.CMS.registerPreviewTemplate('pages', (data) => {
       const entry = data.getIn(['entry']);
-      root.innerHTML = entry.getIn(['data', 'body']);
+      const body = entry.getIn(['data', 'body']);
+
+      // This is the key part: we're using a DOMParser to safely create a document fragment
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(body, 'text/html');
+
+      // Clear the root and append the parsed content
+      previewRoot.innerHTML = '';
+      previewRoot.appendChild(doc.body);
+
+      // This part ensures that any scripts or styles in the content are executed/applied
+      doc.head.querySelectorAll('style, script').forEach(node => {
+        previewRoot.appendChild(node.cloneNode(true));
+      });
+
+      // We return a simple div to let the CMS know we've handled the preview rendering
+      return document.createElement('div');
     });
   </script>
 </body>
