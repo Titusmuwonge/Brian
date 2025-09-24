@@ -1,12 +1,6 @@
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("images");
-
-  return {
-    dir: {
-      input: "content",
-      output: "_site",
-      includes: "_includes"
-    }
-  };
-};
+# cloudcannon.config.yml
+_editor:
+  pages:
+    path: "*.html"
+    _all:
+      hide: false
