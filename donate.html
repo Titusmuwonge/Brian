@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Bringing Hope to the Family USA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .heading-font { font-family: 'Playfair Display', serif; }
+    .donate-btn { transition: all 0.3s ease; }
+    .donate-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- Navbar -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="flex items-center">
+      <img src="https://bringinghopeusa.org/wp-content/uploads/2021/01/BHTF-logo-1.png" alt="Logo" class="h-14">
+    </a>
+    <div class="hidden md:flex space-x-8">
+      <a href="index.html" class="text-gray-600 hover:text-green-700">Home</a>
+      <a href="about.html" class="text-gray-600 hover:text-green-700">About</a>
+      <a href="programs.html" class="text-gray-600 hover:text-green-700">Programs</a>
+      <a href="get-involved.html" class="text-gray-600 hover:text-green-700">Get Involved</a>
+      <a href="donate.html" class="text-green-800 font-semibold">Donate</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative bg-green-800 text-white py-32">
+  <div class="absolute inset-0">
+    <img src="images/donate page/Hero.jpg" 
+         alt="Children in Uganda" class="w-full h-full object-cover opacity-40">
+  </div>
+  <div class="relative z-10 container mx-auto px-6 text-center">
+    <h1 class="heading-font text-4xl md:text-6xl font-bold mb-6">Make a Difference Today</h1>
+    <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-100">
+      Your donation empowers children, families, and communities in Uganda. Choose a fund and help us change lives.
+    </p>
+  </div>
+</section>
+
+<!-- Donation Options -->
+<section class="py-20">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-12 text-center">Choose Your Donation</h2>
+
+    <form id="donationForm" class="space-y-8 bg-white p-10 rounded-xl shadow-lg" data-aos="fade-up">
+
+      <!-- Select Fund -->
+      <div>
+        <label for="fund" class="block text-gray-700 font-medium mb-2">Select a Fund</label>
+        <select id="fund" name="fund" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-700">
+          <option value="education">Education & Scholarships</option>
+          <option value="medical">Medical Care & Emergency Relief</option>
+          <option value="sustainability">Sustainability Programs</option>
+          <option value="general">General Support</option>
+        </select>
+      </div>
+
+      <!-- Donation Amount -->
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Donation Amount ($)</label>
+        <div class="flex space-x-4">
+          <button type="button" class="donate-btn bg-green-700 text-white font-bold py-3 px-6 rounded-full hover:bg-green-800" onclick="setAmount(25)">25</button>
+          <button type="button" class="donate-btn bg-green-700 text-white font-bold py-3 px-6 rounded-full hover:bg-green-800" onclick="setAmount(50)">50</button>
+          <button type="button" class="donate-btn bg-green-700 text-white font-bold py-3 px-6 rounded-full hover:bg-green-800" onclick="setAmount(100)">100</button>
+          <input type="number" id="customAmount" placeholder="Other" class="border border-gray-300 rounded-md p-3 w-full">
+        </div>
+      </div>
+
+      <!-- Donor Information -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+          <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-700">
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-700">
+        </div>
+      </div>
+
+      <!-- Payment Button (Stripe Integration placeholder) -->
+      <div class="text-center">
+        <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-10 rounded-full text-lg transition-colors">
+          Donate Now
+        </button>
+      </div>
+      
+    </form>
+  </div>
+</section>
+
+<!-- Why Donate Section -->
+<section class="py-20 bg-gray-100">
+  <div class="container mx-auto px-6 max-w-5xl text-center">
+    <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-12" data-aos="fade-up">Why Your Donation Matters</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div data-aos="fade-up">
+        <img src="images/donate page/Class.jpg" class="rounded-xl mb-4" alt="Education">
+        <h3 class="font-bold text-green-700 mb-2">Education</h3>
+        <p class="text-gray-600">Fund scholarships, classrooms, and vocational training for orphaned children.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150">
+        <img src="images/donate page/Medical.jpg" class="rounded-xl mb-4" alt="Medical">
+        <h3 class="font-bold text-green-700 mb-2">Medical Care</h3>
+        <p class="text-gray-600">Support emergency procedures, HIV treatment, and health initiatives for vulnerable families.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <img src="images/donate page/tunde-buremo-NgH0WKgVR0A-unsplash.jpg" class="rounded-xl mb-4" alt="Sustainability">
+        <h3 class="font-bold text-green-700 mb-2">Sustainability</h3>
+        <p class="text-gray-600">Invest in farms, clean water projects, and long-term programs that create self-sustaining communities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+  <div class="container mx-auto px-6 text-center">
+    <p class="text-gray-400">© 2023 Bringing Hope to the Family USA. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  AOS.init({ duration: 800, once: true });
+  feather.replace();
+
+  function setAmount(amount) {
+    document.getElementById('customAmount').value = amount;
+  }
+
+  // Stripe integration example placeholder
+  document.getElementById('donationForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert("Stripe payment integration will be implemented here with the selected fund and amount.");
+  });
+</script>
+</body>
+</html>

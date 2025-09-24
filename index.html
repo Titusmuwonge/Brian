@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AEaT | Uganda Nonprofit Organization</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Feather icons (single include) -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .heading-font { font-family: 'Playfair Display', serif; }
+    .hero-gradient { background: linear-gradient(135deg, rgba(22,101,52,0.9) 0%, rgba(22,101,52,0.7) 100%); }
+    .section-icon { width: 80px; height: 80px; background-color: #166534; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+    .donate-btn { transition: all 0.3s ease; }
+    .donate-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center">
+        <a href="index.html" class="inline-block">
+          <img src="https://bringinghopeusa.org/wp-content/uploads/2021/01/BHTF-logo-1.png" alt="Bringing Hope to the Family Logo" class="h-16">
+        </a>
+      </div>
+
+      <!-- Desktop nav -->
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-green-800 font-medium hover:text-green-600">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-green-800">About</a>
+        <a href="programs.html" class="text-gray-600 hover:text-green-800">Programs</a>
+        <a href="get-involved.html" class="text-gray-600 hover:text-green-800">Get Involved</a>
+        <a href="donate.html" class="text-gray-600 hover:text-green-800">Donate</a>
+      </div>
+
+      <!-- Mobile button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="focus:outline-none" aria-label="Open menu">
+          <i data-feather="menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+      <div class="px-6 py-4 flex flex-col space-y-3">
+        <a href="index.html" class="text-green-800 font-medium">Home</a>
+        <a href="about.html" class="text-gray-700">About</a>
+        <a href="programs.html" class="text-gray-700">Programs</a>
+        <a href="get-involved.html" class="text-gray-700">Get Involved</a>
+        <a href="donate.html" class="text-gray-700">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center text-white">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <img src="images/Home page/Hero.jpg" alt="Children in Uganda" class="absolute inset-0 w-full h-full object-cover">
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <h1 class="heading-font text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">American Education and Teachers</h1>
+      <p class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100">Changing families from <span class="font-bold">dependency</span> to <span class="font-bold">self-sustainability</span></p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+        <a href="donate.html" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full donate-btn">Donate Now</a>
+        <a href="about.html" class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-8 rounded-full donate-btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+          <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">Our Mission</h2>
+          <p class="text-gray-700 mb-6 text-lg">American Education and Teachers is the sister organization of Bringing Hope to the Family Uganda established in 2000. Together, we are a nonprofit organization which continues to provide basic needs, education, and clean water to orphans and displaced families in the Kaihura Village of Kyenjojo District, Uganda.</p>
+          <a href="about.html" class="inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full donate-btn">Our Story</a>
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="overflow-hidden rounded-lg shadow-lg">
+              <img src="https://bringinghopeusa.org/wp-content/uploads/2021/02/cNkzRZu4.jpeg" alt="Children at school" class="w-full h-full object-cover">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+              <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/DSC8921-Elaine-Lee-Photography-Uganda-July-2018.jpg" alt="Medical care" class="w-full h-full object-cover">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+              <img src="https://bringinghopeusa.org/wp-content/uploads/2021/02/Homepage_Scholarship.jpg" alt="Students learning" class="w-full h-full object-cover">
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-lg">
+              <img src="https://bringinghopeusa.org/wp-content/uploads/2021/02/A-safe-and-loving-home-Hope-Again-Childrens-Home.jpg" alt="Children's home" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4">Our Programs</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">We provide comprehensive support to orphans and displaced families through education, medical care, emergency relief, and sustainable farming.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Education -->
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
+          <div class="section-icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/ed-1.png" alt="Education icon" class="w-12 h-12">
+          </div>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Education</h3>
+          <p class="text-gray-700 mb-6"><strong>New Hope Vocational Training Institute</strong> provides skills in tailoring, knitting, carpentry, and more for orphans who were unable to return to school.</p>
+          <p class="text-gray-700 mb-6"><strong>Hope Again Nursery and Primary School</strong> specializes in providing education and care to children with disabilities.</p>
+          <a href="programs.html#education" class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+        </div>
+
+        <!-- Medical -->
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="section-icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/medical.png" alt="Medical icon" class="w-12 h-12">
+          </div>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Medical</h3>
+          <p class="text-gray-700 mb-6"><strong>Hope Again Medical Clinic</strong> offers HIV and AIDS positive treatment to orphans and their caretakers, in addition to general medical services.</p>
+          <p class="text-gray-700 mb-6"><strong>Hope Again Children's Home</strong> cares for children ages 2 months to 17 years old by providing opportunities for education and healthy lives.</p>
+          <a href="programs.html#medical" class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+        </div>
+
+        <!-- Emergency Relief -->
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <div class="section-icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/fund.png" alt="Emergency icon" class="w-12 h-12">
+          </div>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Emergency Relief Fund</h3>
+          <p class="text-gray-700 mb-6">We have created an emergency relief fund to address unexpected specific medical needs such as discovery of cancers, tumors, chronic illnesses, and congenital diseases.</p>
+          <p class="text-gray-700 mb-6">Oftentimes, it's orphans who are in need of emergency medical procedures who benefit from this relief fund.</p>
+          <a href="programs.html#relief" class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+        </div>
+
+        <!-- Scholarships -->
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
+          <div class="section-icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/scholarships.png" alt="Scholarship icon" class="w-12 h-12">
+          </div>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Scholarships</h3>
+          <p class="text-gray-700 mb-6">We serve our families and children for more than just a particular season. We fund as many young adults as financially possible into higher education.</p>
+          <p class="text-gray-700 mb-6">Our goal is for all BHTF children to have the opportunity of seeking higher education.</p>
+          <a href="programs.html#scholarships" class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+        </div>
+
+        <!-- Sustainability -->
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <div class="section-icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2021/01/map-1.png" alt="Sustainability icon" class="w-12 h-12">
+          </div>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Sustainability</h3>
+          <p class="text-gray-700 mb-6">We walk alongside BHTF's children and families throughout their lives because we believe the key to changing the future of Uganda is fostering long-term sustainability.</p>
+          <p class="text-gray-700 mb-6"><strong>Kyongera Farm</strong> provides access to healthy produce for students, families, and staff of BHTF.</p>
+          <a href="programs.html#sustainability" class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+        </div>
+
+        <!-- Get Involved -->
+        <div class="bg-green-800 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col justify-center" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="heading-font text-2xl font-bold text-white mb-4 text-center">Join Our Work</h3>
+          <p class="text-green-100 mb-6 text-center">Your support can change lives. Become part of our mission to bring hope to families in Uganda.</p>
+          <div class="flex flex-col space-y-4">
+            <a href="donate.html" class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-6 rounded-full text-center donate-btn">Donate Now</a>
+            <a href="get-involved.html" class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-6 rounded-full text-center transition-colors">Volunteer</a>
+            <a href="get-involved.html#sponsor" class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-6 rounded-full text-center transition-colors">Sponsor a Child</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Section -->
+  <section class="py-20 bg-green-800 text-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Our Impact</h2>
+        <p class="text-green-100 max-w-2xl mx-auto">For over 20 years, we've been transforming lives in Uganda through sustainable programs.</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div class="p-6" data-aos="fade-up">
+          <div class="text-4xl font-bold mb-2">2000+</div>
+          <div class="text-green-200">Children Educated</div>
+        </div>
+        <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-4xl font-bold mb-2">500+</div>
+          <div class="text-green-200">Medical Patients</div>
+        </div>
+        <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-4xl font-bold mb-2">100+</div>
+          <div class="text-green-200">Vocational Graduates</div>
+        </div>
+        <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl font-bold mb-2">20+</div>
+          <div class="text-green-200">Years of Service</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4">Stories of Hope</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Hear from those whose lives have been transformed through our programs.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up">
+          <div class="text-green-700 mb-4"><i data-feather="quote" class="w-8 h-8"></i></div>
+          <p class="text-gray-700 italic mb-6">"Thanks to the vocational training, I now have skills to support my family. I opened a small tailoring shop in my village."</p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <img src="https://via.placeholder.com/200" alt="Student" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <div class="font-bold">Sarah K.</div>
+              <div class="text-sm text-gray-500">Vocational Graduate</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-green-700 mb-4"><i data-feather="quote" class="w-8 h-8"></i></div>
+          <p class="text-gray-700 italic mb-6">"The medical clinic saved my life when I was diagnosed with HIV. Now I receive treatment and can care for my children."</p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <img src="https://via.placeholder.com/200" alt="Patient" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <div class="font-bold">James M.</div>
+              <div class="text-sm text-gray-500">Clinic Patient</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-green-700 mb-4"><i data-feather="quote" class="w-8 h-8"></i></div>
+          <p class="text-gray-700 italic mb-6">"My son with disabilities is thriving at Hope Again School. For the first time, he's learning and making friends."</p>
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <img src="https://via.placeholder.com/200" alt="Parent" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <div class="font-bold">Grace N.</div>
+              <div class="text-sm text-gray-500">Parent</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-green-700 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Make a Difference?</h2>
+      <p class="text-xl max-w-2xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">Your support helps us continue transforming lives in Uganda.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+        <a href="donate.html" class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-8 rounded-full donate-btn">Donate Now</a>
+        <!-- This scrolls to the contact form on this page -->
+        <a href="#contact" class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-8 rounded-full transition-colors">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4">Contact Us</h2>
+        <p class="text-gray-600">We’d love to hear from you! Fill out the form below and we’ll respond as soon as possible.</p>
+      </div>
+
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-white p-8 rounded-xl shadow-md">
+        <!-- Replace the action URL above with your Formspree endpoint or server endpoint -->
+        <input type="hidden" name="_subject" value="Website Contact Form Message">
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium mb-2">Name</label>
+          <input type="text" name="name" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium mb-2">Email</label>
+          <input type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium mb-2">Message</label>
+          <textarea name="message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+        </div>
+
+        <div id="formStatus" class="mb-4 text-center hidden"></div>
+
+        <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full w-full donate-btn">Send Message</button>
+
+        <noscript class="text-sm text-gray-500 mt-2 block">If JavaScript is disabled, the form will submit normally. Please ensure your form `action` is set correctly.</noscript>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html"><img src="https://bringinghopeusa.org/wp-content/uploads/2021/01/BHTF-logo-1.png" alt="Bringing Hope to the Family Logo" class="h-16 mb-4"></a>
+          <p class="text-gray-400">Changing families from dependency to self-sustainability in Uganda since 2000.</p>
+        </div>
+
+        <div>
+          <h4 class="heading-font text-lg font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="programs.html" class="text-gray-400 hover:text-white">Our Programs</a></li>
+            <li><a href="get-involved.html" class="text-gray-400 hover:text-white">Get Involved</a></li>
+            <li><a href="donate.html" class="text-gray-400 hover:text-white">Donate</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="heading-font text-lg font-bold mb-4">Programs</h4>
+          <ul class="space-y-2">
+            <li><a href="programs.html#education" class="text-gray-400 hover:text-white">Education</a></li>
+            <li><a href="programs.html#medical" class="text-gray-400 hover:text-white">Medical Care</a></li>
+            <li><a href="programs.html#relief" class="text-gray-400 hover:text-white">Emergency Relief</a></li>
+            <li><a href="programs.html#scholarships" class="text-gray-400 hover:text-white">Scholarships</a></li>
+            <li><a href="programs.html#sustainability" class="text-gray-400 hover:text-white">Sustainability</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="heading-font text-lg font-bold mb-4">Contact Us</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> info@bringinghopeusa.org</li>
+            <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> USA & Uganda Offices</li>
+          </ul>
+          <div class="mt-4 flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter" class="w-5 h-5"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 American Education and Teachers. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: AOS, mobile menu, form handler, icons -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS and feather
+    AOS.init({ duration: 800, once: true });
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof feather !== 'undefined') { feather.replace(); }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn && mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // swap icon between menu & x
+      const icon = mobileMenuBtn.querySelector('i');
+      if (icon) {
+        if (!mobileMenu.classList.contains('hidden')) {
+          icon.setAttribute('data-feather', 'x');
+        } else {
+          icon.setAttribute('data-feather', 'menu');
+        }
+        feather.replace();
+      }
+    });
+
+    // Contact form submit handler (AJAX) - works with Formspree endpoint
+    (function() {
+      const form = document.getElementById('contactForm');
+      const statusDiv = document.getElementById('formStatus');
+      if (!form) return;
+
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        statusDiv.classList.remove('hidden');
+        statusDiv.classList.remove('text-red-600','text-green-600');
+        statusDiv.textContent = 'Sending...';
+
+        const formData = new FormData(form);
+
+        // Use the form action (replace with your Formspree URL)
+        const endpoint = form.getAttribute('action') || 'https://formbold.com/s/oP5qM';
+
+        try {
+          const res = await fetch(endpoint, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            statusDiv.textContent = 'Thanks — your message has been sent!';
+            statusDiv.classList.add('text-green-600');
+            form.reset();
+          } else {
+            const data = await res.json().catch(() => ({}));
+            const errorMsg = data.errors ? (data.errors.map(e => e.message).join(', ') || 'Submission failed') : 'Submission failed';
+            statusDiv.textContent = errorMsg;
+            statusDiv.classList.add('text-red-600');
+          }
+        } catch (err) {
+          statusDiv.textContent = 'Network error. Please try again later.';
+          statusDiv.classList.add('text-red-600');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
