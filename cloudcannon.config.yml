@@ -1,11 +1,13 @@
 # cloudcannon.config.yml
-
-# Tell CloudCannon where to find your static files (like images)
-_paths:
-  uploads: /images/
-
-# Configure the editor to find your pages in the root
-_editor:
-  page_title: page
-  paths:
-    - "*.html"
+collections:
+  pages:
+    path: "*.html"
+    parse_mode: html
+    output: true
+    editor:
+      show: true
+      preview_path: "index.html"
+      _options:
+        body:
+          widgets:
+            - type: "html"
