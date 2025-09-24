@@ -1,39 +1,18 @@
 backend:
   name: git-gateway
-  branch: main # Change to 'master' if that is your main branch
+  branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-# Replace the entire collections section with this "files" section
-files:
-  - label: "About Page"
-    name: "about"
-    file: "about.html"
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: ""
+    create: true
     fields:
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Contact Page"
-    name: "contact"
-    file: "contact.html"
-    fields:
-      - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Donate Page"
-    name: "donate"
-    file: "donate.html"
-    fields:
-      - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Get Involved Page"
-    name: "get-involved"
-    file: "get-involved.html"
-    fields:
-      - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Home Page"
-    name: "index"
-    file: "index.html"
-    fields:
-      - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Programs Page"
-    name: "programs"
-    file: "programs.html"
-    fields:
-      - {label: "Body", name: "body", widget: "markdown"}
+    editor:
+      preview: true
+      preview_path: "/admin/preview-template.html"
