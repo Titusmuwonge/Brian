@@ -6,7 +6,7 @@ media_folder: "images"
 public_folder: "/uploads"
 
 collections:
-  - name: "pages"
+  - name: "Pages"
     label: "Pages"
     folder: "Pages"
     create: true
