@@ -9,7 +9,7 @@
   <div id="preview-root"></div>
   <script>
     const previewRoot = document.getElementById('preview-root');
-    window.CMS.registerPreviewTemplate('pages', (data) => {
+    window.CMS.registerPreviewTemplate('Pages', (data) => {
       const entry = data.getIn(['entry']);
       const body = entry.getIn(['data', 'body']);
 
