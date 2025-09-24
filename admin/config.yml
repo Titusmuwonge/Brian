@@ -2,11 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images"
+media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "Pages"
+  - name: "pages"
     label: "Pages"
     folder: "Pages"
     create: true
