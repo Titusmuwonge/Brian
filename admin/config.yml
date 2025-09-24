@@ -8,11 +8,15 @@ public_folder: "/uploads"
 collections:
   - name: "pages"
     label: "Pages"
-    folder: "pages"
+    folder: ""
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
     editor:
       preview: true
+<<<<<<< HEAD
       preview_path: "/admin/preview-template.html"
+=======
+      preview_path: "/preview-template.html"
+>>>>>>> 0e49d3fa9972d04e11b1cbb8f0b89d1f77962fda
