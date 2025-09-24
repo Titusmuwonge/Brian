@@ -1,6 +1,0 @@
-# cloudcannon.config.yml
-_editor:
-  pages:
-    path: "*.html"
-    _all:
-      hide: false
