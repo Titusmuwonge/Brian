@@ -3,7 +3,7 @@ collections_config:
   pages:
     path: .
     glob:
-    name:
+    name: Pagess
     singular_name:
     icon: notes
     url:
@@ -12,6 +12,13 @@ collections_config:
     documentation:
     description: ''
     preview:
+      text:
+      subtext:
+      icon:
+      icon_color:
+      image:
+      metadata:
+      gallery:
     sort:
     sort_options:
     _editables:
