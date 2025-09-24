@@ -1,18 +1,12 @@
-backend:
-  name: git-gateway
-  branch: main
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("images");
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
-
-collections:
-  - name: "pages"
-    label: "Pages"
-    folder: "content"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    editor:
-      preview: true
-      preview_path: "/admin/preview-template.html"
+  return {
+    dir: {
+      input: "content",
+      output: "_site",
+      includes: "_includes"
+    }
+  };
+};
