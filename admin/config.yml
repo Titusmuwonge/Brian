@@ -15,4 +15,4 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
     editor:
       preview: true
-      preview_path: "/preview-template.html"
+      preview_path: "/admin/preview-template.html"
