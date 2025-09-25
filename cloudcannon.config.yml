@@ -3,11 +3,14 @@
 site:
   input: .
   output: .
+  build:
+    command: ""     # No build command, just serve files as-is
+    output: "."     # Output is the root folder
 
 editor:
   default_path: index.html
   options:
-    source_editor: false   # hide source editor for client safety
+    source_editor: false   # safer for your client
     visual_editor: true
 
 paths:
@@ -35,7 +38,6 @@ _structure:
     - get-involved.html
     - programs.html
 
-# Define fields available for editing
 fields:
   title:
     label: "Page Title"
