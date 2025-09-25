@@ -24,91 +24,118 @@
       <img src="images/logo1.png" alt="BHTF Logo" class="h-16" data-cms-bind="nav_logo">
     </a>
     <div class="hidden md:flex space-x-8">
-      <a href="index.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_home">Home</a>
-      <a href="about.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_about">About</a>
-      <a href="programs.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_programs">Programs</a>
-      <a href="get-involved.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_involved">Get Involved</a>
-      <a href="donate.html" class="text-orange-800 font-medium" data-cms-bind="nav_donate">Donate</a>
+      <a href="index.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_home">Home</a>
+      <a href="about.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_about">About</a>
+      <a href="programs.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_programs">Programs</a>
+      <a href="get-involved.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_involved">Get Involved</a>
+      <a href="donate.html" class="text-green-800 font-medium" data-cms-bind="nav_donate">Donate</a>
     </div>
   </div>
 </nav>
 
 <section class="relative h-96 flex items-center justify-center text-white">
   <div class="absolute inset-0 bg-black opacity-50"></div>
-  <img src="images/donate page/Donate.jpg" alt="Donate" class="absolute inset-0 w-full h-full object-cover" data-cms-bind="hero_image">
+  <img src="images/donate page/Hero.jpg" alt="Donation Image" class="absolute inset-0 w-full h-full object-cover" data-cms-bind="hero_image">
   <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-    <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-cms-bind="hero_title">Make a Difference</h1>
-    <p class="text-lg md:text-xl" data-cms-bind="hero_subtitle">Your generosity provides hope, education, and a brighter future.</p>
+    <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up" data-cms-bind="hero_title">Donate to AEaT</h1>
+    <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100" data-cms-bind="hero_subtitle">Your generosity provides hope, healing, and a future to families in Africa.</p>
   </div>
 </section>
 
-<section class="py-20 bg-orange-100">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="heading-font text-3xl md:text-4xl font-bold text-orange-800 mb-4" data-cms-bind="reason_title">Why Your Donation Matters</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto" data-cms-bind="reason_intro">Every contribution, no matter the size, helps us expand our reach and deepen our impact.</p>
+<section class="py-20 bg-gray-100">
+  <div class="container mx-auto px-6 max-w-xl text-center">
+    <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="donation_title">Make a Difference Today</h2>
+    <p class="text-gray-700 mb-8" data-cms-bind="donation_subtitle">Every contribution, big or small, helps us provide essential services to vulnerable communities. Please select a donation amount below or enter a custom amount.</p>
+    
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <button class="bg-white text-green-800 font-bold py-3 px-6 rounded-full border-2 border-green-700 hover:bg-green-700 hover:text-white transition-colors donate-btn" onclick="setAmount(25)" data-cms-bind="donation_amount_1_text">$25</button>
+      <button class="bg-white text-green-800 font-bold py-3 px-6 rounded-full border-2 border-green-700 hover:bg-green-700 hover:text-white transition-colors donate-btn" onclick="setAmount(50)" data-cms-bind="donation_amount_2_text">$50</button>
+      <button class="bg-white text-green-800 font-bold py-3 px-6 rounded-full border-2 border-green-700 hover:bg-green-700 hover:text-white transition-colors donate-btn" onclick="setAmount(100)" data-cms-bind="donation_amount_3_text">$100</button>
+      <button class="bg-white text-green-800 font-bold py-3 px-6 rounded-full border-2 border-green-700 hover:bg-green-700 hover:text-white transition-colors donate-btn" onclick="setAmount(250)" data-cms-bind="donation_amount_4_text">$500</button>
     </div>
+
+    <div class="mb-8">
+      <label for="customAmount" class="block text-gray-700 mb-2" data-cms-bind="custom_amount_label">Or enter a custom amount:</label>
+      <input type="number" id="customAmount" placeholder="Enter Amount" class="w-full md:w-1/2 mx-auto text-center border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600" data-cms-bind="custom_amount_input">
+    </div>
+
+    <a href="#" id="donateButton" class="inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-12 rounded-full donate-btn" data-cms-bind="donate_button_text">Donate Now</a>
+
+  </div>
+</section>
+
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-8" data-cms-bind="impact_section_title">Your Donation at Work</h2>
     <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div data-aos="fade-up">
-        <img src="images/donate page/Education.jpg" class="rounded-xl mb-4" alt="Education">
-        <h3 class="font-bold text-orange-700 mb-2">Education</h3>
-        <p class="text-gray-600">Provide school fees, supplies, and vocational training for children and young adults.</p>
+      <div data-aos="fade-up" data-aos-delay="0">
+        <img src="images/donate page/Class.jpg" class="rounded-xl mb-4" alt="Education" data-cms-bind="impact_image_1">
+        <h3 class="font-bold text-green-700 mb-2" data-cms-bind="impact_title_1">Education</h3>
+        <p class="text-gray-600" data-cms-bind="impact_description_1">Provide school fees, supplies, and uniforms for orphaned children.</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="150">
-        <img src="images/donate page/Medical.jpg" class="rounded-xl mb-4" alt="Medical">
-        <h3 class="font-bold text-orange-700 mb-2">Medical Care</h3>
-        <p class="text-gray-600">Support emergency procedures, HIV treatment, and health initiatives for vulnerable families.</p>
+        <img src="images/donate page/Medical.jpg" class="rounded-xl mb-4" alt="Medical" data-cms-bind="impact_image_2">
+        <h3 class="font-bold text-green-700 mb-2" data-cms-bind="impact_title_2">Medical Care</h3>
+        <p class="text-gray-600" data-cms-bind="impact_description_2">Support emergency procedures, HIV treatment, and health initiatives for vulnerable families.</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="300">
-        <img src="images/donate page/tunde-buremo-NgH0WKgVR0A-unsplash.jpg" class="rounded-xl mb-4" alt="Sustainability">
-        <h3 class="font-bold text-orange-700 mb-2">Sustainability</h3>
-        <p class="text-gray-600">Invest in farms, clean water projects, and long-term programs that create self-sustaining communities.</p>
+        <img src="images/donate page/tunde-buremo-NgH0WKgVR0A-unsplash.jpg" class="rounded-xl mb-4" alt="Sustainability" data-cms-bind="impact_image_3">
+        <h3 class="font-bold text-green-700 mb-2" data-cms-bind="impact_title_3">Sustainability</h3>
+        <p class="text-gray-600" data-cms-bind="impact_description_3">Invest in farms, clean water projects, and long-term programs that create self-sustaining communities.</p>
       </div>
     </div>
   </div>
 </section>
 
 <footer class="bg-gray-900 text-white pt-16 pb-8">
-  <div class="container mx-auto px-6 text-center">
-    <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-4 gap-12">
-        <div class="md:col-span-2">
-          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_about_title">American Education & Teachers</h4>
-          <p class="text-gray-400 mb-4" data-cms-bind="footer_about_text">A nonprofit organization committed to transforming lives in Uganda through education and sustainable development.</p>
-          <img src="images/logo1-white.png" alt="Logo" class="h-12 mb-4">
-        </div>
-
-        <div>
-          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="about.html" class="hover:text-white" data-cms-bind="footer_link_about">About Us</a></li>
-            <li><a href="programs.html" class="hover:text-white" data-cms-bind="footer_link_programs">Our Programs</a></li>
-            <li><a href="get-involved.html" class="hover:text-white" data-cms-bind="footer_link_involved">Get Involved</a></li>
-            <li><a href="contact.html" class="hover:text-white" data-cms-bind="footer_link_contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_contact_title">Contact</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li class="flex items-start"><i data-feather="phone" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_phone">+1 (801) 368-2070</span></li>
-            <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
-            <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
-          </ul>
-          <div class="mt-4 flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
-            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
-            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
-          </div>
-        </div>
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
+      <div>
+        <a href="index.html"><img src="images/logo1.png" alt="Bringing Hope to the Family Logo" class="h-16 mb-4" data-cms-bind="footer_logo"></a>
+        <p class="text-gray-400" data-cms-bind="footer_mission">Changing families from dependency to self-sustainability in Africa.</p>
       </div>
 
-      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
-        <div class="flex space-x-6">
-          <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
+      <div>
+        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_home">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_about">About Us</a></li>
+          <li><a href="programs.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_programs">Our Programs</a></li>
+          <li><a href="get-involved.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_involved">Get Involved</a></li>
+          <li><a href="donate.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_donate">Donate</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_programs_title">Programs</h4>
+        <ul class="space-y-2">
+          <li><a href="programs.html#education" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_education">Education</a></li>
+          <li><a href="programs.html#medical" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_medical">Medical Care</a></li>
+          <li><a href="programs.html#relief" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_relief">Emergency Relief</a></li>
+          <li><a href="programs.html#scholarships" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_scholarships">Scholarships</a></li>
+          <li><a href="programs.html#sustainability" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_sustainability">Sustainability</a></li>
+          </ul>
+      </div>
+
+      <div>
+        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_contact_title">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
+          <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
+        </ul>
+        <div class="mt-4 flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
         </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
+        <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
       </div>
     </div>
   </div>
@@ -117,6 +144,11 @@
 <script>
   AOS.init({ duration: 800, once: true });
   feather.replace();
+
+  function setAmount(amount) {
+    document.getElementById('customAmount').value = amount;
+  }
 </script>
+
 </body>
 </html>

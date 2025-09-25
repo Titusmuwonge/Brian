@@ -16,11 +16,11 @@
           </a>
         </div>
         <div class="hidden md:flex space-x-8">
-          <a href="index.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_home">Home</a>
-          <a href="about.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_about">About</a>
-          <a href="programs.html" class="text-orange-800 font-medium" data-cms-bind="nav_programs">Programs</a>
-          <a href="get-involved.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_involved">Get Involved</a>
-          <a href="contact.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_contact">Contact</a>
+          <a href="index.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_home">Home</a>
+          <a href="about.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_about">About</a>
+          <a href="programs.html" class="text-green-800 font-medium" data-cms-bind="nav_programs">Programs</a>
+          <a href="get-involved.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_involved">Get Involved</a>
+          <a href="contact.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_contact">Contact</a>
         </div>
         <button class="md:hidden focus:outline-none">
           <i data-feather="menu"></i>
@@ -40,79 +40,179 @@
 
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-orange-800 mb-4" data-aos="fade-up" data-cms-bind="programs_title">Our Impactful Initiatives</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100" data-cms-bind="programs_intro">We focus on long-term, sustainable solutions that empower communities and create a ripple effect of change.</p>
-      </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="p-8 border rounded-xl hover:shadow-lg transition-shadow duration-300" data-aos="fade-up">
-          <img src="images/programs page/Education.jpg" alt="Education" class="rounded-xl mb-4">
-          <h3 class="font-bold text-xl text-orange-800 mb-2">Education</h3>
-          <p class="text-gray-700">From providing scholarships to building new schools, we are committed to giving every child the opportunity to learn.</p>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+          <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="education_title">Education Programs</h2>
+          <p class="text-gray-700 mb-6" data-cms-bind="education_intro_text">Education is the foundation for breaking the cycle of poverty. Our schools provide quality education to orphans and vulnerable children, with specialized programs for children with disabilities.</p>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="book-open" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="hope_again_school_title">Our Primary Schools</h4>
+                <p class="text-gray-700" data-cms-bind="hope_again_school_text">Serving over 300 students with quality primary education, including specialized classes for children with disabilities.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="tool" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="new_hope_institute_title">Training Institutes</h4>
+                <p class="text-gray-700" data-cms-bind="new_hope_institute_text">Provides marketable skills in tailoring, carpentry, knitting, and more for youth who cannot afford traditional schooling.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="award" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="scholarship_program_title">Scholarship Program</h4>
+                <p class="text-gray-700" data-cms-bind="scholarship_program_text">Supports secondary and university education for qualifying students to pursue higher education.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="p-8 border rounded-xl hover:shadow-lg transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100">
-          <img src="images/programs page/Agriculture.jpg" alt="Agriculture" class="rounded-xl mb-4">
-          <h3 class="font-bold text-xl text-orange-800 mb-2">Agriculture & Sustainability</h3>
-          <p class="text-gray-700">We train local farmers in modern techniques and manage a self-sustaining farm that feeds our students and families.</p>
-        </div>
-        <div class="p-8 border rounded-xl hover:shadow-lg transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200">
-          <img src="images/programs page/medical care.jpg" alt="Medical Care" class="rounded-xl mb-4">
-          <h3 class="font-bold text-xl text-orange-800 mb-2">Medical Care</h3>
-          <p class="text-gray-700">Our medical teams provide free healthcare, preventative education, and access to treatment for vulnerable communities.</p>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="images/programs page/Education.jpg" alt="Education Program" class="w-full h-96 object-cover" data-cms-bind="education_image">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-20 bg-orange-100">
+  <section class="py-20 bg-gray-100">
     <div class="container mx-auto px-6">
-      <div class="flex flex-col lg:flex-row items-center">
-        <div class="lg:w-1/2 mb-12 lg:mb-0">
-          <h2 class="heading-font text-3xl md:text-4xl font-bold text-orange-800 mb-6" data-aos="fade-right">Our Comprehensive Approach</h2>
-          <p class="text-lg text-gray-700 mb-8" data-aos="fade-right" data-aos-delay="100">
-            We believe in holistic change. Our programs are interconnected, addressing the core needs of a community to build a foundation for a prosperous future.
-          </p>
-          <div class="space-y-6" data-aos="fade-right" data-aos-delay="200">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 order-2 md:order-1" data-aos="fade-right">
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="images/programs page/Medical.jpg" alt="Medical Program" class="w-full h-96 object-cover" data-cms-bind="medical_image">
+          </div>
+        </div>
+        <div class="md:w-1/2 md:pl-10 order-1 md:order-2" data-aos="fade-left">
+          <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="medical_title">Medical Care Programs</h2>
+          <p class="text-gray-700 mb-6" data-cms-bind="medical_intro_text">Access to healthcare is critical for the well-being of children and families in our community. Our medical programs address both immediate health needs and long-term wellness.</p>
+          <div class="space-y-6">
             <div class="flex items-start">
-              <div class="bg-orange-100 p-2 rounded-full mr-4">
-                <i data-feather="book-open" class="text-orange-700 w-5 h-5"></i>
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="heart" class="text-green-700 w-5 h-5"></i>
               </div>
               <div>
-                <h4 class="font-bold text-gray-800 mb-1">Education & Vocational Training</h4>
-                <p class="text-gray-700">Empowering children and young adults with essential skills for their future.</p>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="clinic_title">Medical Clinics</h4>
+                <p class="text-gray-700" data-cms-bind="clinic_text">Provides general medical care, HIV/AIDS treatment, maternal health services, and health education to over 500 patients monthly.</p>
               </div>
             </div>
             <div class="flex items-start">
-              <div class="bg-orange-100 p-2 rounded-full mr-4">
-                <i data-feather="activity" class="text-orange-700 w-5 h-5"></i>
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="shield" class="text-green-700 w-5 h-5"></i>
               </div>
               <div>
-                <h4 class="font-bold text-gray-800 mb-1">AEaT Farm</h4>
-                <p class="text-gray-700">25-acre farm producing food for our programs while teaching sustainable agriculture techniques.</p>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="hiv_aids_title">HIV/AIDS Treatment Program</h4>
+                <p class="text-gray-700" data-cms-bind="hiv_aids_text">Comprehensive care including antiretroviral therapy, counseling, and nutritional support for HIV+ individuals.</p>
               </div>
             </div>
             <div class="flex items-start">
-              <div class="bg-orange-100 p-2 rounded-full mr-4">
-                <i data-feather="dollar-sign" class="text-orange-700 w-5 h-5"></i>
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="alert-circle" class="text-green-700 w-5 h-5"></i>
               </div>
               <div>
-                <h4 class="font-bold text-gray-800 mb-1">Income-Generating Projects</h4>
-                <p class="text-gray-700">Includes vocational graduate businesses, farm produce sales, and craft production to support our programs.</p>
-              </div>
-            </div>
-            <div class="flex items-start">
-              <div class="bg-orange-100 p-2 rounded-full mr-4">
-                <i data-feather="repeat" class="text-orange-700 w-5 h-5"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-800 mb-1">Community Development</h4>
-                <p class="text-gray-700">Partners with local families to improve economic stability through microloans and skills training.</p>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="emergency_fund_title">Emergency Medical Fund</h4>
+                <p class="text-gray-700" data-cms-bind="emergency_fund_text">Provides financial assistance for critical medical needs including surgeries, cancer treatment, and congenital conditions.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="lg:w-1/2" data-aos="fade-left">
-          <img src="images/programs page/program-approach.jpg" alt="Our Approach" class="rounded-xl shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+          <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="childrens_home_title">Children's Home</h2>
+          <p class="text-gray-700 mb-6" data-cms-bind="childrens_home_intro_text">A safe, loving environment for orphans and vulnerable children who have no other family to care for them.</p>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="home" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="residential_care_title">Residential Care</h4>
+                <p class="text-gray-700" data-cms-bind="residential_care_text">Provides housing, nutrition, healthcare, and emotional support for children ages 2 months to 17 years.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="users" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="family_living_title">Family-Style Living</h4>
+                <p class="text-gray-700" data-cms-bind="family_living_text">Children live in small groups with dedicated caregivers to create a family environment.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="smile" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="holistic_development_title">Holistic Development</h4>
+                <p class="text-gray-700" data-cms-bind="holistic_development_text">Focuses on spiritual, emotional, physical, and educational growth for each child.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="images/programs page/Children's home.jpg" alt="Children's Home Program" class="w-full h-96 object-cover" data-cms-bind="childrens_home_image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 order-2 md:order-1" data-aos="fade-right">
+          <div class="overflow-hidden rounded-lg shadow-lg">
+            <img src="images/programs page/Sustainability.jpg" alt="Sustainability Program" class="w-full h-96 object-cover" data-cms-bind="sustainability_image">
+          </div>
+        </div>
+        <div class="md:w-1/2 md:pl-10 order-1 md:order-2" data-aos="fade-left">
+          <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="sustainability_title">Sustainability Programs</h2>
+          <p class="text-gray-700 mb-6" data-cms-bind="sustainability_intro_text">Long-term solutions that create self-sufficiency for individuals and the organization.</p>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="package" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="kyongera_farm_title">Our Farms</h4>
+                <p class="text-gray-700" data-cms-bind="kyongera_farm_text">Extensive farm land producing food for our programs while teaching sustainable agriculture techniques.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="dollar-sign" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="income_projects_title">Income-Generating Projects</h4>
+                <p class="text-gray-700" data-cms-bind="income_projects_text">Includes vocational graduate businesses, farm produce sales, and craft production to support our programs.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-green-100 p-2 rounded-full mr-4">
+                <i data-feather="repeat" class="text-green-700 w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-1" data-cms-bind="community_dev_title">Community Development</h4>
+                <p class="text-gray-700" data-cms-bind="community_dev_text">Partners with local families to improve economic stability through microloans and skills training.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -120,27 +220,37 @@
 
   <footer class="bg-gray-900 text-white pt-16 pb-8">
     <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-4 gap-12">
-        <div class="md:col-span-2">
-          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_about_title">American Education & Teachers</h4>
-          <p class="text-gray-400 mb-4" data-cms-bind="footer_about_text">A nonprofit organization committed to transforming lives in Uganda through education and sustainable development.</p>
-          <img src="images/logo1-white.png" alt="Logo" class="h-12 mb-4">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <a href="index.html"><img src="images/logo1.png" alt="Bringing Hope to the Family Logo" class="h-16 mb-4" data-cms-bind="footer_logo"></a>
+          <p class="text-gray-400" data-cms-bind="footer_mission">Changing families from dependency to self-sustainability in Africa.</p>
         </div>
 
         <div>
-          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
-          <ul class="space-y-2 text-gray-400">
-            <li><a href="about.html" class="hover:text-white" data-cms-bind="footer_link_about">About Us</a></li>
-            <li><a href="programs.html" class="hover:text-white" data-cms-bind="footer_link_programs">Our Programs</a></li>
-            <li><a href="get-involved.html" class="hover:text-white" data-cms-bind="footer_link_involved">Get Involved</a></li>
-            <li><a href="contact.html" class="hover:text-white" data-cms-bind="footer_link_contact">Contact</a></li>
+          <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_home">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_about">About Us</a></li>
+            <li><a href="programs.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_programs">Our Programs</a></li>
+            <li><a href="get-involved.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_involved">Get Involved</a></li>
+            <li><a href="donate.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_donate">Donate</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_contact_title">Contact</h4>
+          <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_programs_title">Programs</h4>
+          <ul class="space-y-2">
+            <li><a href="programs.html#education" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_education">Education</a></li>
+            <li><a href="programs.html#medical" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_medical">Medical Care</a></li>
+            <li><a href="programs.html#relief" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_relief">Emergency Relief</a></li>
+            <li><a href="programs.html#scholarships" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_scholarships">Scholarships</a></li>
+            <li><a href="programs.html#sustainability" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_sustainability">Sustainability</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_contact_title">Contact Us</h4>
           <ul class="space-y-2 text-gray-400">
-            <li class="flex items-start"><i data-feather="phone" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_phone">+1 (801) 368-2070</span></li>
             <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
             <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
           </ul>
@@ -162,7 +272,6 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 800, once: true });
     feather.replace();
