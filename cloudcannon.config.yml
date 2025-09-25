@@ -2,14 +2,16 @@ site:
   input: .
   output: _site
   build:
-    command: cp -r . _site
+    command: |
+      mkdir -p _site
+      cp -r *.html images _site/
     output: _site
 
 collections_config:
   pages:
     output: true
     path: /
-    url: "/:basename.html"   # 👈 keeps the real filename (about.html, contact.html, etc.)
+    url: "/:basename.html"
     _enabled_editors:
       - visual
       - content
