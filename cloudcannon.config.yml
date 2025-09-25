@@ -1,0 +1,46 @@
+_schema: _schema
+collections_config:
+  pages:
+    path: .
+    glob:
+    name:
+    singular_name:
+    icon: notes
+    url:
+    disable_url: true
+    include_developer_files:
+    documentation:
+    description: ''
+    preview:
+    sort:
+    sort_options:
+    _editables:
+    _enabled_editors:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
+timezone: Etc/UTC
+collections:
+  pages:
+    path: '*.html'
+    parse_mode: html
+    output: true
+    _inputs:
+      title:
+        type: text
+        label: Page Title
+        comment: The main title of the page
+        cascade: true
+      content:
+        type: html
+        label: Page Content
+        comment: The main body of the page
+        cascade: true
