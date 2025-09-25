@@ -22,124 +22,111 @@
       <img src="images/logo1.png" alt="AEaT Logo" class="h-16" data-cms-bind="nav_logo">
     </a>
     <div class="hidden md:flex space-x-8">
-      <a href="index.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_home">Home</a>
-      <a href="about.html" class="text-green-800 font-medium" data-cms-bind="nav_about">About</a>
-      <a href="programs.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_programs">Programs</a>
-      <a href="get-involved.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_involved">Get Involved</a>
-      <a href="contact.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_contact">Contact</a>
+      <a href="index.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_home">Home</a>
+      <a href="about.html" class="text-orange-800 font-medium" data-cms-bind="nav_about">About</a>
+      <a href="programs.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_programs">Programs</a>
+      <a href="get-involved.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_involved">Get Involved</a>
+      <a href="contact.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_contact">Contact</a>
     </div>
   </div>
 </nav>
 
 <section class="relative h-96 flex items-center justify-center text-white">
-  <div class="absolute inset-0">
-    <img src="images/about page/Our mission.jpg" alt="Our Mission" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-  </div>
+  <div class="absolute inset-0 bg-black opacity-50"></div>
+  <img src="images/about-us page/About us.jpg" alt="About us" class="absolute inset-0 w-full h-full object-cover" data-cms-bind="hero_image">
   <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-    <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up" data-cms-bind="hero_title">Our Mission</h1>
-    <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100" data-cms-bind="hero_subtitle">Empowering communities to thrive through education and sustainability.</p>
+    <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-cms-bind="hero_title">About Us</h1>
+    <p class="text-lg md:text-xl" data-cms-bind="hero_subtitle">Our story, our mission, and our commitment to a better future.</p>
   </div>
 </section>
 
 <section class="py-20 bg-white">
   <div class="container mx-auto px-6">
     <div class="flex flex-col md:flex-row items-center">
-      <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="about_title">Who We Are</h2>
-        <p class="text-gray-700 mb-4" data-cms-bind="about_text1">
-          American Education and Teachers (AEaT) is a faith-based non-profit organization operating in both the USA and Uganda. Our mission is to alleviate poverty and foster self-sufficiency by empowering families with the tools and resources they need to create a brighter future.
-        </p>
-        <p class="text-gray-700" data-cms-bind="about_text2">
-          We focus on providing holistic support that addresses the root causes of poverty, including education, healthcare, and economic development. Our model is rooted in local partnership, ensuring that our programs are community-led and sustainable for generations to come.
+      <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-orange-800 mb-6" data-cms-bind="mission_title">Our Story</h2>
+        <p class="text-gray-700 mb-4" data-cms-bind="mission_text">
+          Founded in 2012 by Pastor Charles and his wife Esther Mugisha in Kampala, Uganda, American Education and Teachers began with a simple vision: to bring hope to a nation struggling with poverty, illiteracy, and disease. Starting with a small number of vulnerable children, the organization has grown to support thousands of families through education, medical care, and sustainable development.
         </p>
       </div>
-      <div class="md:w-1/2" data-aos="fade-left">
-        <img src="images/about page/education.jpg" alt="Children in classroom" class="rounded-xl shadow-lg w-full" data-cms-bind="about_image">
+      <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+        <img src="images/about-us page/our story.jpg" alt="AEaT founder" class="rounded-xl shadow-lg" data-cms-bind="founder_image">
       </div>
     </div>
   </div>
 </section>
 
-<section class="py-20 bg-gray-100">
+<section class="py-20 bg-orange-100">
   <div class="container mx-auto px-6">
-    <div class="flex flex-col-reverse md:flex-row items-center">
-      <div class="md:w-1/2 md:pr-10" data-aos="fade-right">
-        <img src="images/about page/team.jpg" alt="Our Team" class="rounded-xl shadow-lg w-full" data-cms-bind="team_image">
-      </div>
-      <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-left">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="leadership_title">Leadership & Governance</h2>
-        <p class="text-gray-700 mb-4" data-cms-bind="leadership_text1">
+    <div class="flex flex-col md:flex-row-reverse items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0 md:pl-12" data-aos="fade-left">
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-orange-800 mb-6" data-cms-bind="leadership_title">Leadership & Vision</h2>
+        <p class="text-gray-700 mb-4" data-cms-bind="leadership_text">
           American Education and Teachers is guided by dedicated leaders in both Uganda and the USA. Together, they ensure accountability, transparency, and long-term sustainability in every initiative.
         </p>
-        <p class="text-gray-700" data-cms-bind="leadership_text2">
+        <p class="text-gray-700">
           Their vision is rooted in faith, compassion, and a firm belief that communities can rise when given the right tools, resources, and opportunities.
         </p>
       </div>
+      <div class="md:w-1/2" data-aos="fade-right">
+        <img src="images/about-us page/leadership-vision.jpg" alt="AEaT leadership team" class="rounded-xl shadow-lg" data-cms-bind="leadership_image">
+      </div>
     </div>
   </div>
 </section>
 
-<section class="py-20 bg-green-800 text-white text-center">
+<section class="py-20 bg-orange-800 text-white text-center">
   <div class="container mx-auto px-6">
-    <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Be Part of the Story</h2>
-    <p class="max-w-2xl mx-auto mb-8 text-lg">
+    <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6" data-cms-bind="cta_title">Be Part of the Story</h2>
+    <p class="max-w-2xl mx-auto mb-8 text-lg" data-cms-bind="cta_text">
       Your support allows us to continue transforming lives. Whether through donations, volunteering, or spreading the word — you are bringing hope to families in Uganda.
     </p>
-    <a href="get-involved.html" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600">Get Involved</a>
+    <a href="get-involved.html" class="bg-white text-orange-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100" data-cms-bind="cta_btn_text">Get Involved</a>
   </div>
 </section>
 
 <footer class="bg-gray-900 text-white pt-16 pb-8">
-  <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12">
-    <div class="md:col-span-1">
-      <a href="index.html" class="inline-block mb-4">
-        <img src="images/logo-white.png" alt="Logo" class="h-16" data-cms-bind="footer_logo">
-      </a>
-      <p class="text-gray-400 text-sm" data-cms-bind="footer_description">
-        Empowering communities in Uganda from dependency to self-sustainability through education, healthcare, and economic development.
-      </p>
-    </div>
+  <div class="container mx-auto px-6 text-center">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-2">
+          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_about_title">American Education & Teachers</h4>
+          <p class="text-gray-400 mb-4" data-cms-bind="footer_about_text">A nonprofit organization committed to transforming lives in Uganda through education and sustainable development.</p>
+          <img src="images/logo1-white.png" alt="Logo" class="h-12 mb-4">
+        </div>
 
-    <div class="md:col-span-1">
-      <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
-      <ul class="space-y-2 text-gray-400">
-        <li><a href="about.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_about">About Us</a></li>
-        <li><a href="programs.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_programs">Our Programs</a></li>
-        <li><a href="get-involved.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_involved">Get Involved</a></li>
-        <li><a href="donate.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_donate">Donate</a></li>
-        <li><a href="contact.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_contact">Contact</a></li>
-      </ul>
-    </div>
+        <div>
+          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="about.html" class="hover:text-white" data-cms-bind="footer_link_about">About Us</a></li>
+            <li><a href="programs.html" class="hover:text-white" data-cms-bind="footer_link_programs">Our Programs</a></li>
+            <li><a href="get-involved.html" class="hover:text-white" data-cms-bind="footer_link_involved">Get Involved</a></li>
+            <li><a href="contact.html" class="hover:text-white" data-cms-bind="footer_link_contact">Contact</a></li>
+          </ul>
+        </div>
 
-    <div class="md:col-span-1">
-      <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_contact_title">Contact Info</h4>
-      <ul class="space-y-2 text-gray-400 text-sm">
-        <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
-        <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
-      </ul>
-      <div class="mt-4 flex space-x-4">
-        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
-        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
-        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
+        <div>
+          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_contact_title">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start"><i data-feather="phone" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_phone">+1 (801) 368-2070</span></li>
+            <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
+            <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
+          </ul>
+          <div class="mt-4 flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="md:col-span-1">
-      <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_newsletter_title">Newsletter</h4>
-      <p class="text-gray-400 text-sm mb-4" data-cms-bind="footer_newsletter_text">Stay up to date with our latest stories and events.</p>
-      <form action="#" class="flex flex-col">
-        <input type="email" placeholder="Your email address" class="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white text-sm mb-2" data-cms-bind="footer_email_input">
-        <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 rounded-md transition-colors duration-300" data-cms-bind="footer_subscribe_button">Subscribe</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
-    <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
-    <div class="flex space-x-6">
-      <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
-      <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

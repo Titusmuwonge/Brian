@@ -18,8 +18,8 @@
   <style>
     body { font-family: 'Poppins', sans-serif; }
     .heading-font { font-family: 'Playfair Display', serif; }
-    .hero-gradient { background: linear-gradient(135deg, rgba(249,115,22,0.9) 0%, rgba(22,101,52,0.7) 100%); }
-    .section-icon { width: 80px; height: 80px; background-color: #f97316; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+    .hero-gradient { background: linear-gradient(135deg, rgba(255,102,0,0.9) 0%, rgba(255,102,0,0.7) 100%); }
+    .section-icon { width: 80px; height: 80px; background-color: #FF6600; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
     .donate-btn { transition: all 0.3s ease; }
     .donate-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
   </style>
@@ -35,11 +35,11 @@
       </div>
 
       <div class="hidden md:flex space-x-8">
-        <a href="index.html" class="text-green-800 font-medium hover:text-green-600" data-cms-bind="nav_home">Home</a>
-        <a href="about.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_about">About</a>
-        <a href="programs.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_programs">Programs</a>
-        <a href="get-involved.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_involved">Get Involved</a>
-        <a href="donate.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_donate">Donate</a>
+        <a href="index.html" class="text-orange-800 font-medium hover:text-orange-600" data-cms-bind="nav_home">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_about">About</a>
+        <a href="programs.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_programs">Programs</a>
+        <a href="get-involved.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_involved">Get Involved</a>
+        <a href="donate.html" class="text-gray-600 hover:text-orange-800" data-cms-bind="nav_donate">Donate</a>
       </div>
 
       <div class="md:hidden">
@@ -51,7 +51,7 @@
 
     <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
       <div class="px-6 py-4 flex flex-col space-y-3">
-        <a href="index.html" class="text-green-800 font-medium" data-cms-bind="mobile_nav_home">Home</a>
+        <a href="index.html" class="text-orange-800 font-medium" data-cms-bind="mobile_nav_home">Home</a>
         <a href="about.html" class="text-gray-700" data-cms-bind="mobile_nav_about">About</a>
         <a href="programs.html" class="text-gray-700" data-cms-bind="mobile_nav_programs">Programs</a>
         <a href="get-involved.html" class="text-gray-700" data-cms-bind="mobile_nav_involved">Get Involved</a>
@@ -65,172 +65,113 @@
     <img src="images/Home page/Hero.jpg" alt="Children in Uganda" class="absolute inset-0 w-full h-full object-cover" data-cms-bind="hero_image">
     <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
       <h1 class="heading-font text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up" data-cms-bind="hero_title">American Education and Teachers</h1>
-      <p class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100" data-cms-bind="hero_subtitle">Changing families from <span class="font-bold">dependency</span> to <span class="font-bold">self-sustainability</span></p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
-        <a href="donate.html" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 donate-btn" data-cms-bind="hero_donate_button">Donate Now</a>
-        <a href="about.html" class="bg-transparent border border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-green-800 transition-colors duration-300" data-cms-bind="hero_about_button">Learn More</a>
-      </div>
+      <p class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100" data-cms-bind="hero_subtitle">Empowering communities and transforming lives through education, sustainability, and faith.</p>
+      <a href="programs.html" class="inline-block bg-orange-800 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full transition" data-aos="fade-up" data-aos-delay="200" data-cms-bind="hero_btn_text">Our Programs</a>
     </div>
   </section>
 
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4" data-aos="fade-up" data-cms-bind="programs_title">Our Programs</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100" data-cms-bind="programs_subtitle">We offer comprehensive solutions to transform lives in Africa.</p>
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-orange-800 mb-4" data-aos="fade-up" data-cms-bind="mission_title">Our Mission</h2>
+        <p class="text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100" data-cms-bind="mission_text">To bring hope and a promising future to families in Africa through education and sustainable development, guided by a foundation of faith and compassion.</p>
       </div>
-      <div class="grid md:grid-cols-3 gap-12">
-        <div class="text-center" data-aos="fade-up">
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
           <div class="section-icon">
-            <i data-feather="book-open" class="w-10 h-10 text-white"></i>
+            <i data-feather="book-open" class="text-white w-10 h-10"></i>
           </div>
-          <h3 class="font-bold text-xl text-green-800 mb-2" data-cms-bind="program1_title">Education</h3>
-          <p class="text-gray-700 px-4" data-cms-bind="program1_text">We provide quality education to children and vocational skills to adults, empowering a new generation.</p>
-        </div>
-        <div class="text-center" data-aos="fade-up" data-aos-delay="150">
-          <div class="section-icon">
-            <i data-feather="heart" class="w-10 h-10 text-white"></i>
-          </div>
-          <h3 class="font-bold text-xl text-green-800 mb-2" data-cms-bind="program2_title">Healthcare</h3>
-          <p class="text-gray-700 px-4" data-cms-bind="program2_text">We offer essential medical care, health education, and support to families in remote villages.</p>
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2" data-cms-bind="feature1_title">Quality Education</h3>
+          <p class="text-gray-700" data-cms-bind="feature1_text">We build schools, provide scholarships, and support teachers to ensure every child has access to learning.</p>
         </div>
         <div class="text-center" data-aos="fade-up" data-aos-delay="300">
           <div class="section-icon">
-            <i data-feather="dollar-sign" class="w-10 h-10 text-white"></i>
+            <i data-feather="dollar-sign" class="text-white w-10 h-10"></i>
           </div>
-          <h3 class="font-bold text-xl text-green-800 mb-2" data-cms-bind="program3_title">Sustainability</h3>
-          <p class="text-gray-700 px-4" data-cms-bind="program3_text">We implement sustainable projects, like farms and micro-loans, to help communities become self-reliant.</p>
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2" data-cms-bind="feature2_title">Sustainable Future</h3>
+          <p class="text-gray-700" data-cms-bind="feature2_text">Our programs focus on income-generating projects and agriculture to help families achieve economic independence.</p>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="section-icon">
+            <i data-feather="heart" class="text-white w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2" data-cms-bind="feature3_title">Community Empowerment</h3>
+          <p class="text-gray-700" data-cms-bind="feature3_text">We empower local leaders and families, building strong, self-reliant communities from the ground up.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-20 bg-green-800 text-white">
+  <section class="py-20 bg-orange-800 text-white">
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
-          <img src="images/Home page/sustainability.jpg" alt="Woman farming" class="rounded-xl shadow-lg w-full" data-cms-bind="about_image">
+        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12" data-aos="fade-right">
+          <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6" data-cms-bind="cta_title">Every Donation Counts</h2>
+          <p class="text-lg md:text-xl mb-8" data-cms-bind="cta_text">Your support directly impacts lives. Just $25 can provide school supplies for a child for an entire year.</p>
+          <a href="donate.html" class="donate-btn inline-block bg-white text-orange-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100" data-cms-bind="cta_btn_text">Donate Now</a>
         </div>
         <div class="md:w-1/2" data-aos="fade-left">
-          <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6" data-cms-bind="about_title">Changing lives from dependency to self-sustainability</h2>
-          <p class="text-green-100 mb-6" data-cms-bind="about_text1">
-            AEaT is a non-profit organization dedicated to empowering communities in Uganda, Africa. We believe that true transformation comes from providing the tools and knowledge necessary for long-term self-sufficiency.
-          </p>
-          <p class="text-green-100 mb-8" data-cms-bind="about_text2">
-            Through our comprehensive programs in education, healthcare, and economic development, we work alongside local leaders and families to create lasting change that echoes for generations.
-          </p>
-          <a href="about.html" class="bg-white text-green-800 font-bold py-3 px-8 rounded-full inline-block hover:bg-gray-100 transition-colors duration-300" data-cms-bind="about_button">Learn More About Us</a>
+          <img src="images/Home page/donate.jpg" alt="Child writing in a notebook" class="rounded-xl shadow-lg" data-cms-bind="cta_image">
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4" data-aos="fade-up" data-cms-bind="stories_title">Stories from the Field</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100" data-cms-bind="stories_subtitle">See how your support is making a real difference.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
-          <img src="images/Home page/story1.jpg" alt="Community gathering" class="w-full h-48 object-cover" data-cms-bind="story1_image">
-          <div class="p-6">
-            <h3 class="font-bold text-xl text-green-800 mb-2" data-cms-bind="story1_title">The Power of Education</h3>
-            <p class="text-gray-700" data-cms-bind="story1_text">Meet Sarah, a young girl who can now attend school thanks to our education sponsorship program. Her future is now bright with possibility.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="150">
-          <img src="images/Home page/story2.jpg" alt="Health clinic" class="w-full h-48 object-cover" data-cms-bind="story2_image">
-          <div class="p-6">
-            <h3 class="font-bold text-xl text-green-800 mb-2" data-cms-bind="story2_title">A Healthier Community</h3>
-            <p class="text-gray-700" data-cms-bind="story2_text">Our mobile clinics are reaching remote villages, providing life-saving immunizations and health education to those who need it most.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-          <img src="images/Home page/story3.jpg" alt="Sewing class" class="w-full h-48 object-cover" data-cms-bind="story3_image">
-          <div class="p-6">
-            <h3 class="font-bold text-xl text-green-800 mb-2" data-cms-bind="story3_title">New Skills, New Opportunities</h3>
-            <p class="text-gray-700" data-cms-bind="story3_text">Our vocational training for young adults is providing them with the skills to start their own businesses and support their families.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 bg-green-800 text-white text-center">
-    <div class="container mx-auto px-6">
-      <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up" data-cms-bind="cta_title">Join Our Mission</h2>
-      <p class="max-w-2xl mx-auto mb-8 text-lg" data-aos="fade-up" data-aos-delay="100" data-cms-bind="cta_subtitle">
-        Your support helps us continue our life-changing work.
-      </p>
-      <a href="donate.html" class="bg-white text-green-800 font-bold py-3 px-8 rounded-full inline-block hover:bg-gray-100 transition-colors duration-300" data-aos="fade-up" data-aos-delay="200" data-cms-bind="cta_donate_button">Donate Now</a>
     </div>
   </section>
 
   <footer class="bg-gray-900 text-white pt-16 pb-8">
-    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12">
-      <div class="md:col-span-1">
-        <a href="index.html" class="inline-block mb-4">
-          <img src="images/logo-white.png" alt="Logo" class="h-16" data-cms-bind="footer_logo">
-        </a>
-        <p class="text-gray-400 text-sm" data-cms-bind="footer_description">
-          Empowering communities in Uganda from dependency to self-sustainability through education, healthcare, and economic development.
-        </p>
-      </div>
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12">
+        <div class="md:col-span-2">
+          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_about_title">American Education & Teachers</h4>
+          <p class="text-gray-400 mb-4" data-cms-bind="footer_about_text">A nonprofit organization committed to transforming lives in Uganda through education and sustainable development.</p>
+          <img src="images/logo1-white.png" alt="Logo" class="h-12 mb-4">
+        </div>
 
-      <div class="md:col-span-1">
-        <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li><a href="about.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_about">About Us</a></li>
-          <li><a href="programs.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_programs">Our Programs</a></li>
-          <li><a href="get-involved.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_involved">Get Involved</a></li>
-          <li><a href="donate.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_donate">Donate</a></li>
-          <li><a href="contact.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_contact">Contact</a></li>
-        </ul>
-      </div>
+        <div>
+          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="about.html" class="hover:text-white" data-cms-bind="footer_link_about">About Us</a></li>
+            <li><a href="programs.html" class="hover:text-white" data-cms-bind="footer_link_programs">Our Programs</a></li>
+            <li><a href="get-involved.html" class="hover:text-white" data-cms-bind="footer_link_involved">Get Involved</a></li>
+            <li><a href="contact.html" class="hover:text-white" data-cms-bind="footer_link_contact">Contact</a></li>
+          </ul>
+        </div>
 
-      <div class="md:col-span-1">
-        <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_contact_title">Contact Info</h4>
-        <ul class="space-y-2 text-gray-400 text-sm">
-          <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
-          <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
-        </ul>
-        <div class="mt-4 flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
+        <div>
+          <h4 class="font-bold text-xl mb-4" data-cms-bind="footer_contact_title">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start"><i data-feather="phone" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_phone">+1 (801) 368-2070</span></li>
+            <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
+            <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
+          </ul>
+          <div class="mt-4 flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
+          </div>
         </div>
       </div>
 
-      <div class="md:col-span-1">
-        <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_newsletter_title">Newsletter</h4>
-        <p class="text-gray-400 text-sm mb-4" data-cms-bind="footer_newsletter_text">Stay up to date with our latest stories and events.</p>
-        <form action="#" class="flex flex-col">
-          <input type="email" placeholder="Your email address" class="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white text-sm mb-2" data-cms-bind="footer_email_input">
-          <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 rounded-md transition-colors duration-300" data-cms-bind="footer_subscribe_button">Subscribe</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
-      <div class="flex space-x-6">
-        <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
-        <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      AOS.init({ duration: 800, once: true });
-      feather.replace();
+    AOS.init({ duration: 800, once: true });
+    feather.replace();
 
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
 
-      mobileMenuButton.addEventListener('click', () => {
+      mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
       });
     });
