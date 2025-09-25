@@ -4,13 +4,13 @@ site:
   input: .
   output: .
   build:
-    command: ""     # No build command, just serve files as-is
-    output: "."     # Output is the root folder
+    command: ""     # No build, serve raw HTML
+    output: "."     # Output is the root
 
 editor:
   default_path: index.html
   options:
-    source_editor: false   # safer for your client
+    source_editor: false
     visual_editor: true
 
 paths:
@@ -28,6 +28,15 @@ files:
 
 uploads:
   images: "images"
+
+# Create a pages "collection" for CloudCannon to list
+collections_config:
+  pages:
+    output: true
+    path: ""
+    icon: page
+    filters:
+      - "*.html"
 
 _structure:
   pages:
