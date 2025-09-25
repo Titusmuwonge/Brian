@@ -12,6 +12,31 @@
   <style>
     body { font-family: 'Poppins', sans-serif; }
     .heading-font { font-family: 'Playfair Display', serif; }
+    :root {
+    --color-primary-800: #FF6600; /* A strong, vibrant orange */
+    --color-primary-700: #FF8C00; /* A slightly lighter orange */
+    --color-primary-100: #FFF5E6; /* A very light orange */
+  }
+
+  /* Replace green classes with CSS variables */
+  .text-green-800, .hover\:text-green-800:hover, .text-green-700, .bg-green-800, .bg-green-700, .bg-green-100, .hover\:text-green-600:hover {
+    color: var(--color-primary-800);
+  }
+
+  .text-green-800 { color: var(--color-primary-800); }
+  .text-green-700 { color: var(--color-primary-700); }
+  .text-green-100 { color: var(--color-primary-100); }
+
+  .bg-green-800 { background-color: var(--color-primary-800); }
+  .bg-green-700 { background-color: var(--color-primary-700); }
+  .bg-green-100 { background-color: var(--color-primary-100); }
+  .hover\:text-green-800:hover { color: var(--color-primary-800); }
+  .hover\:text-green-600:hover { color: var(--color-primary-700); }
+  .focus\:ring-green-700:focus { --tw-ring-color: var(--color-primary-700); }
+
+  /* Update hardcoded CSS colors */
+  .hero-gradient { background: linear-gradient(135deg, rgba(255,102,0,0.9) 0%, rgba(255,102,0,0.7) 100%); }
+  .section-icon { background-color: #FF6600; }
   </style>
 </head>
 <body class="bg-gray-50">
