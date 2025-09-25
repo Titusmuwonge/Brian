@@ -32,72 +32,66 @@
 </nav>
 
 <section class="relative h-80 flex items-center justify-center text-white">
-  <div class="absolute inset-0 bg-black opacity-50"></div>
-  <img src="images/contact page/Hero.jpg" alt="Contact Us" class="absolute inset-0 w-full h-full object-cover" data-cms-bind="hero_image">
+  <div class="absolute inset-0">
+    <img src="images/contact page/Contact.jpg" alt="Contact Us" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-green-900 opacity-70"></div>
+  </div>
   <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-    <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up" data-cms-bind="hero_title">Contact Us</h1>
-    <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100" data-cms-bind="hero_subtitle">We would love to hear from you</p>
+    <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up" data-cms-bind="hero_title">Get in Touch</h1>
+    <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100" data-cms-bind="hero_subtitle">We'd love to hear from you.</p>
   </div>
 </section>
 
-<section class="py-20 bg-white">
+<section class="py-20 bg-gray-50">
   <div class="container mx-auto px-6">
     <div class="flex flex-col md:flex-row gap-12">
-
-      <div class="md:w-1/2 p-8 bg-gray-100 rounded-xl shadow-md" data-aos="fade-right">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="contact_info_title">Contact Information</h2>
-        <p class="text-gray-700 mb-8" data-cms-bind="contact_info_text">Feel free to reach out to us with any questions about our programs, donations, or volunteering. Our team is ready to assist you.</p>
-
-        <ul class="space-y-6">
-          <li class="flex items-start">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold text-green-800 mb-6">Contact Information</h2>
+        <div class="space-y-6">
+          <div class="flex items-start">
             <i data-feather="mail" class="w-6 h-6 text-green-700 mr-4 mt-1"></i>
             <div>
-              <h4 class="font-bold text-gray-800" data-cms-bind="email_title">Email</h4>
-              <p class="text-gray-700" data-cms-bind="email_address">americaneducationandstudents@gmail.com</p>
+              <h3 class="font-semibold text-lg text-gray-800">Email Address</h3>
+              <p class="text-gray-700">americaneducationandstudents@gmail.com</p>
             </div>
-          </li>
-          <li class="flex items-start">
+          </div>
+          <div class="flex items-start">
             <i data-feather="phone" class="w-6 h-6 text-green-700 mr-4 mt-1"></i>
             <div>
-              <h4 class="font-bold text-gray-800" data-cms-bind="phone_title">Phone (Uga)</h4>
-              <p class="text-gray-700" data-cms-bind="phone_number_usa">0758 089738</p>
+              <h3 class="font-semibold text-lg text-gray-800">Phone Number</h3>
+              <p class="text-gray-700">+256 701 555 555</p>
             </div>
-          </li>
-          <li class="flex items-start">
+          </div>
+          <div class="flex items-start">
             <i data-feather="map-pin" class="w-6 h-6 text-green-700 mr-4 mt-1"></i>
             <div>
-              <h4 class="font-bold text-gray-800" data-cms-bind="usa_address_title">USA Address</h4>
-              <p class="text-gray-700" data-cms-bind="usa_address_text">P.O Box 491, Hilliard OH 43026</p>
+              <h3 class="font-semibold text-lg text-gray-800">Our Address</h3>
+              <p class="text-gray-700">P.O. Box 718, Mityana, Uganda</p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="md:w-1/2 p-8 bg-gray-100 rounded-xl shadow-md" data-aos="fade-left">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-cms-bind="form_title">Send Us a Message</h2>
-        <form id="contactForm" action="https://formbold.com/s/oP5qM" method="POST">
-          <div class="mb-4">
-            <label for="name" class="block text-gray-700 font-bold mb-2" data-cms-bind="form_name_label">Name</label>
-            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-700" required data-cms-bind="form_name_input">
-          </div>
-
-          <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-bold mb-2" data-cms-bind="form_email_label">Email</label>
-            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-700" required data-cms-bind="form_email_input">
-          </div>
-
-          <div class="mb-4">
-            <label for="subject" class="block text-gray-700 font-bold mb-2" data-cms-bind="form_subject_label">Subject</label>
-            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-700" data-cms-bind="form_subject_input">
-          </div>
-
-          <div class="mb-6">
-            <label for="message" class="block text-gray-700 font-bold mb-2" data-cms-bind="form_message_label">Message</label>
-            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-700" required data-cms-bind="form_message_input"></textarea>
-          </div>
-
-          <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full w-full transition" data-cms-bind="form_submit_button">Send Message</button>
-        </form>
+      <div class="md:w-1/2">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
+          <h2 class="text-3xl font-bold text-green-800 mb-6">Send Us a Message</h2>
+          <form id="contactForm" action="https://formspree.io/f/mkgqgrlj" method="POST" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+              <input type="text" name="name" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 focus:ring-1" required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" name="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 focus:ring-1" required>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea name="message" id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 focus:ring-1" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300">Send Message</button>
+            <div id="formStatus" class="mt-4 hidden text-center font-bold"></div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -105,63 +99,64 @@
 
 <section class="py-20 bg-gray-100">
   <div class="container mx-auto px-6">
-    <h2 class="heading-font text-3xl font-bold text-green-800 mb-6 text-center" data-cms-bind="map_title">Our Location</h2>
-    <div class="w-full h-96 rounded-xl overflow-hidden shadow-md" data-cms-bind="map_container">
-      <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.65882650893!2d30.9329712!3d0.6406213999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17743d1a49419c8f%3A0xf639a04a434c382!2sBringing%20Hope%20To%20The%20Family!5e0!3m2!1sen!2sug!4v1709121696081!5m2!1sen!2sug" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-cms-bind="map_iframe"></iframe>
+    <h2 class="text-3xl font-bold text-green-800 mb-6 text-center">Our Location</h2>
+    <div class="w-full h-96 rounded-xl overflow-hidden shadow-md">
+      <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.87878848148!2d32.41727787494101!3d0.4079836996841203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d85341270a24f%3A0x7d6c6e7681c6328a!2sBringing%20Hope%20to%20the%20Family%20Uganda!5e0!3m2!1sen!2sug!4v1688647703893!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </section>
 
 <footer class="bg-gray-900 text-white pt-16 pb-8">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-4 gap-10 mb-12">
-      <div>
-        <a href="index.html"><img src="images/logo1.png" alt="Bringing Hope to the Family Logo" class="h-16 mb-4" data-cms-bind="footer_logo"></a>
-        <p class="text-gray-400" data-cms-bind="footer_mission">Changing families from dependency to self-sustainability in Africa.</p>
-      </div>
+  <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12">
+    <div class="md:col-span-1">
+      <a href="index.html" class="inline-block mb-4">
+        <img src="images/logo-white.png" alt="Logo" class="h-16" data-cms-bind="footer_logo">
+      </a>
+      <p class="text-gray-400 text-sm" data-cms-bind="footer_description">
+        Empowering communities in Uganda from dependency to self-sustainability through education, healthcare, and economic development.
+      </p>
+    </div>
 
-      <div>
-        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
-        <ul class="space-y-2">
-          <li><a href="index.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_home">Home</a></li>
-          <li><a href="about.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_about">About Us</a></li>
-          <li><a href="programs.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_programs">Our Programs</a></li>
-          <li><a href="get-involved.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_involved">Get Involved</a></li>
-          <li><a href="donate.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_donate">Donate</a></li>
-        </ul>
-      </div>
+    <div class="md:col-span-1">
+      <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="about.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_about">About Us</a></li>
+        <li><a href="programs.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_programs">Our Programs</a></li>
+        <li><a href="get-involved.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_involved">Get Involved</a></li>
+        <li><a href="donate.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_donate">Donate</a></li>
+        <li><a href="contact.html" class="hover:text-white transition-colors duration-300" data-cms-bind="footer_contact">Contact</a></li>
+      </ul>
+    </div>
 
-      <div>
-        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_programs_title">Programs</h4>
-        <ul class="space-y-2">
-          <li><a href="programs.html#education" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_education">Education</a></li>
-          <li><a href="programs.html#medical" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_medical">Medical Care</a></li>
-          <li><a href="programs.html#relief" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_relief">Emergency Relief</a></li>
-          <li><a href="programs.html#scholarships" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_scholarships">Scholarships</a></li>
-          <li><a href="programs.html#sustainability" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_sustainability">Sustainability</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_contact_title">Contact Us</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
-          <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
-        </ul>
-        <div class="mt-4 flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
-        </div>
+    <div class="md:col-span-1">
+      <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_contact_title">Contact Info</h4>
+      <ul class="space-y-2 text-gray-400 text-sm">
+        <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
+        <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
+        <li class="flex items-start"><i data-feather="phone" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_phone">+256 701 555 555</span></li>
+      </ul>
+      <div class="mt-4 flex space-x-4">
+        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
       </div>
     </div>
 
-    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
-      <div class="flex space-x-6">
-        <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
-        <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
-      </div>
+    <div class="md:col-span-1">
+      <h4 class="font-bold text-lg mb-4" data-cms-bind="footer_newsletter_title">Newsletter</h4>
+      <p class="text-gray-400 text-sm mb-4" data-cms-bind="footer_newsletter_text">Stay up to date with our latest stories and events.</p>
+      <form action="#" class="flex flex-col">
+        <input type="email" placeholder="Your email address" class="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 text-white text-sm mb-2" data-cms-bind="footer_email_input">
+        <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 rounded-md transition-colors duration-300" data-cms-bind="footer_subscribe_button">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
+    <div class="flex space-x-6">
+      <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
+      <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
     </div>
   </div>
 </footer>
@@ -169,6 +164,44 @@
 <script>
   AOS.init({ duration: 800, once: true });
   feather.replace();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    const statusDiv = document.getElementById('formStatus');
+
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        statusDiv.classList.remove('hidden', 'text-red-600', 'text-green-600');
+        statusDiv.textContent = 'Sending...';
+
+        const formData = new FormData(form);
+        const endpoint = form.getAttribute('action');
+
+        try {
+          const res = await fetch(endpoint, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            statusDiv.textContent = 'Thanks — your message has been sent!';
+            statusDiv.classList.add('text-green-600');
+            form.reset();
+          } else {
+            const data = await res.json().catch(() => ({}));
+            const errorMsg = data.errors ? (data.errors.map(e => e.message).join(', ') || 'Submission failed') : 'Submission failed';
+            statusDiv.textContent = errorMsg;
+            statusDiv.classList.add('text-red-600');
+          }
+        } catch (err) {
+          statusDiv.textContent = 'Network error. Please try again later.';
+          statusDiv.classList.add('text-red-600');
+        }
+      });
+    }
+  });
 </script>
 </body>
 </html>
