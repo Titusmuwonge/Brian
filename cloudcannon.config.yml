@@ -1,1 +1,39 @@
+site:
+  input: .
+  output: _site
+  build:
+    command: |
+      mkdir -p _site
+      cp -r *.html images _site/
+    output: _site
 
+collections_config:
+  pages:
+    output: true
+    path: /
+    url: "/:basename.html"
+    _enabled_editors:
+      - visual
+      - content
+    filter:
+      - "*.html"
+    name: Pages
+    singular_name: Page
+    description: Editable site pages
+    icon: file
+
+_editables:
+  h1:
+    label: Heading
+    type: text
+  h2:
+    label: Subheading
+    type: text
+  p:
+    label: Paragraph
+    type: rich-text
+  img[src]:
+    label: Image
+    type: image
+    options:
+      uploads_dir: images
