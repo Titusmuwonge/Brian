@@ -1,67 +1,37 @@
-# cloudcannon.config.yml
-
 site:
   input: .
-  output: .
+  output: _site
   build:
-    command: ""     # No build, serve raw HTML
-    output: "."     # Output is the root
+    command: cp -r . _site
+    output: _site
 
-editor:
-  default_path: index.html
-  options:
-    source_editor: false
-    visual_editor: true
-
-paths:
-  uploads: "images"
-  static: "."
-
-visual_editor:
-  enabled: true
-  paths:
-    - "*.html"
-
-files:
-  - "*.html"
-  - "images//*"
-
-uploads:
-  images: "images"
-
-# Create a pages "collection" for CloudCannon to list
 collections_config:
   pages:
     output: true
-    path: ""
-    icon: page
-    filters:
+    path: /
+    url: "/:path/"
+    _enabled_editors:
+      - visual
+      - content
+    filter:
       - "*.html"
+    name: Pages
+    singular_name: Page
+    description: Editable site pages
+    icon: file
 
-_structure:
-  pages:
-    - index.html
-    - about.html
-    - contact.html
-    - donate.html
-    - get-involved.html
-    - programs.html
-
-fields:
-  title:
-    label: "Page Title"
+_editables:
+  h1:
+    label: Heading
     type: text
-  intro:
-    label: "Intro Text"
-    type: textarea
-  hero_image:
-    label: "Hero Image"
+  h2:
+    label: Subheading
+    type: text
+  p:
+    label: Paragraph
+    type: rich-text
+  img[src]:
+    label: Image
     type: image
     options:
-      path: images
-  content:
-    label: "Main Content"
-    type: markdown
-  footer:
-    label: "Footer Text"
-    type: text
+      uploads_dir: images
