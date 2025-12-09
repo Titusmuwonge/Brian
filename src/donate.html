@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-cms-bind="page_title">Contact Us | American Education and Teachers</title>
+    <title data-cms-bind="page_title">{{title}} | American Education and Teachers</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -19,6 +19,15 @@
 
         .heading-font {
             font-family: 'Playfair Display', serif;
+        }
+
+        .donate-btn {
+            transition: all 0.3s ease;
+        }
+
+        .donate-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
 
         :root {
@@ -102,104 +111,71 @@
                     data-cms-bind="nav_programs">Programs</a>
                 <a href="get-involved.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_involved">Get
                     Involved</a>
-                <a href="contact.html" class="text-green-800 font-medium" data-cms-bind="nav_contact">Contact</a>
+                <a href="donate.html" class="text-green-800 font-medium" data-cms-bind="nav_donate">Donate</a>
             </div>
         </div>
     </nav>
 
-    <section class="relative h-80 flex items-center justify-center text-white">
+    <section class="relative h-96 flex items-center justify-center text-white">
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <img src="images/contact page/Hero.jpg" alt="Contact Us" class="absolute inset-0 w-full h-full object-cover">
+        <img src="{{hero.image}}" alt="Donation Image" class="absolute inset-0 w-full h-full object-cover">
         <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-            <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Contact Us</h1>
-            <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100">We would love to hear from you</p>
-        </div>
-    </section>
-
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12">
-
-                <div class="md:w-1/2 p-8 bg-gray-100 rounded-xl shadow-md" data-aos="fade-right">
-                    <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">Contact Information
-                    </h2>
-                    <p class="text-gray-700 mb-8">Feel free to reach out to us with any questions about our programs, donations, or volunteering. Our team is ready to assist you.</p>
-
-                    <ul class="space-y-6">
-                        
-                        <li class="flex items-start">
-                            <i data-feather="mail" class="w-6 h-6 text-green-700 mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800">Email</h4>
-                                <p class="text-gray-700">americaneducationandstudents@gmail.com</p>
-                            </div>
-                        </li>
-                        
-                        <li class="flex items-start">
-                            <i data-feather="phone" class="w-6 h-6 text-green-700 mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800">Phone (Uga)</h4>
-                                <p class="text-gray-700">0758 089738</p>
-                            </div>
-                        </li>
-                        
-                        <li class="flex items-start">
-                            <i data-feather="map-pin" class="w-6 h-6 text-green-700 mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="font-bold text-gray-800">USA Address</h4>
-                                <p class="text-gray-700">P.O Box 491, Hilliard OH 43026</p>
-                            </div>
-                        </li>
-                        
-                    </ul>
-                </div>
-
-                <div class="md:w-1/2 p-8 bg-gray-100 rounded-xl shadow-md" data-aos="fade-left">
-                    <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">Send Us a Message</h2>
-                    <form id="contactForm" action="https://formbold.com/s/oP5qM" method="POST">
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
-                            <input type="text" id="name" name="name"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-700"
-                                required>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
-                            <input type="email" id="email" name="email"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-700"
-                                required>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="subject"
-                                class="block text-gray-700 font-bold mb-2">Subject</label>
-                            <input type="text" id="subject" name="subject"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-700">
-                        </div>
-
-                        <div class="mb-6">
-                            <label for="message"
-                                class="block text-gray-700 font-bold mb-2">Message</label>
-                            <textarea id="message" name="message" rows="5"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-700"
-                                required></textarea>
-                        </div>
-
-                        <button type="submit"
-                            class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded-full w-full transition">Send Message</button>
-                    </form>
-                </div>
-            </div>
+            <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">{{hero.title}}</h1>
+            <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100">{{hero.subtitle}}</p>
         </div>
     </section>
 
     <section class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="heading-font text-3xl font-bold text-green-800 mb-6 text-center">Our Location</h2>
-            <div class="w-full h-96 rounded-xl overflow-hidden shadow-md">
-                <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.65882650893!2d30.9329712!3d0.6406213999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17743d1a49419c8f%3A0xf639a04a434c382!2sBringing%20Hope%20To%20The%20Family!5e0!3m2!1sen!2sug!4v1709121696081!5m2!1sen!2sug" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container mx-auto px-6 max-w-xl text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">{{donation.title}}</h2>
+            <p class="text-gray-700 mb-8">{{donation.subtitle}}</p>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                {{#donation.amounts}}
+                <button
+                    class="bg-white text-green-800 font-bold py-3 px-6 rounded-full border-2 border-green-700 hover:bg-green-700 hover:text-white transition-colors donate-btn"
+                    onclick="setAmount({{amount}})">{{text}}</button>
+                {{/donation.amounts}}
+            </div>
+
+            <div class="mb-8">
+                <label for="customAmount" class="block text-gray-700 mb-2">{{donation.customLabel}}</label>
+                <input type="number" id="customAmount" placeholder="Enter Amount"
+                    class="w-full md:w-1/2 mx-auto text-center border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600">
+            </div>
+
+            <a href="#" id="donateButton"
+                class="inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-4 px-12 rounded-full donate-btn"
+                target="_blank">{{donation.buttonText}}</a>
+
+            <!-- Thank You Video Section -->
+            <div class="mt-16 max-w-3xl mx-auto" data-aos="fade-up">
+                <div class="bg-white p-4 rounded-2xl shadow-xl">
+                    <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">{{video.title}}</h3>
+                    <div class="relative pt-[56.25%] bg-black rounded-xl overflow-hidden">
+                        <video class="absolute top-0 left-0 w-full h-full" controls poster="{{video.poster}}">
+                            <source src="{{video.file}}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-8">
+                {{impact.title}}</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                {{#impact.items}}
+                <div data-aos="fade-up" data-aos-delay="0">
+                    <img src="{{image}}" class="rounded-xl mb-4" alt="{{title}}">
+                    <h3 class="font-bold text-green-700 mb-2">{{title}}</h3>
+                    <p class="text-gray-600">{{description}}</p>
+                </div>
+                {{/impact.items}}
             </div>
         </div>
     </section>
@@ -218,11 +194,14 @@
                     <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="index.html" class="text-gray-400 hover:text-white"
-                                data-cms-bind="footer_link_home">Home</a></li>
+                                data-cms-bind="footer_link_home">Home</a>
+                        </li>
                         <li><a href="about.html" class="text-gray-400 hover:text-white"
-                                data-cms-bind="footer_link_about">About Us</a></li>
+                                data-cms-bind="footer_link_about">About
+                                Us</a></li>
                         <li><a href="programs.html" class="text-gray-400 hover:text-white"
-                                data-cms-bind="footer_link_programs">Our Programs</a></li>
+                                data-cms-bind="footer_link_programs">Our
+                                Programs</a></li>
                         <li><a href="get-involved.html" class="text-gray-400 hover:text-white"
                                 data-cms-bind="footer_link_involved">Get Involved</a></li>
                         <li><a href="donate.html" class="text-gray-400 hover:text-white"
@@ -267,7 +246,8 @@
 
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education
-                    and Teachers. All rights reserved.</p>
+                    and
+                    Teachers. All rights reserved.</p>
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy
                         Policy</a>
@@ -281,7 +261,57 @@
     <script>
         AOS.init({ duration: 800, once: true });
         feather.replace();
+
+        // STRIPE CONFIGURATION
+        // REPLACE THESE LINKS WITH YOUR ACTUAL STRIPE PAYMENT LINKS
+        const stripeLinks = {
+            25: "https://buy.stripe.com/test_placeholder_25",
+            50: "https://buy.stripe.com/test_placeholder_50",
+            100: "https://buy.stripe.com/test_placeholder_100",
+            500: "https://buy.stripe.com/test_placeholder_500",
+            custom: "https://buy.stripe.com/test_placeholder_custom"
+        };
+
+        // Fix: The original HTML passed 250 for the $500 button. Let's assume it should be 500.
+        // If you change the HTML to setAmount(500), update this map.
+
+        let selectedAmount = null;
+
+        function setAmount(amount) {
+            selectedAmount = amount;
+            document.getElementById('customAmount').value = amount;
+            updateDonateButton();
+            highlightButton(amount);
+        }
+
+        document.getElementById('customAmount').addEventListener('input', function (e) {
+            selectedAmount = 'custom';
+            updateDonateButton();
+            highlightButton('custom');
+        });
+
+        function updateDonateButton() {
+            const btn = document.getElementById('donateButton');
+            let link = stripeLinks.custom; // Default to custom/general link
+
+            if (selectedAmount && stripeLinks[selectedAmount]) {
+                link = stripeLinks[selectedAmount];
+            }
+
+            btn.href = link;
+        }
+
+        function highlightButton(amount) {
+            // Reset all buttons (optional visual improvement)
+            const btns = document.querySelectorAll('.donate-btn');
+            // Implementation of visual highlight can be added here if desired
+            // For now, we just handle the logic
+        }
+
+        // Initialize with default link
+        updateDonateButton();
     </script>
+
 </body>
 
 </html>

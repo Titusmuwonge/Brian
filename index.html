@@ -155,14 +155,13 @@
     </div>
   </nav>
 
-  <section class="relative h-screen flex items-center justify-center text-white"
-    data-sb-object-id="content/pages/index.json">
+  <section class="relative h-screen flex items-center justify-center text-white">
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <img src="images/Home page/Hero.jpeg" alt="Children in Uganda" class="absolute inset-0 w-full h-full object-cover">
     <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-      <h1 class="heading-font text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up" data-sb-field-path="hero.title">
+      <h1 class="heading-font text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">
         American Education and Teachers</h1>
-      <p class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100" data-sb-field-path="hero.subtitle">
+      <p class="text-xl md:text-2xl mb-8" data-aos="fade-up" data-aos-delay="100">
         Changing families from dependency to self-sustainability
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
@@ -180,9 +179,9 @@
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
-          <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6" data-sb-field-path="about.title">
+          <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">
             Our Mission</h2>
-          <p class="text-gray-700 mb-6 text-lg" data-sb-field-path="about.paragraph">American Education and Teachers is a non-governmental organization dedicated to empowering communities in Africa. Founded in 2024, our mission is to create a pathway for families to transition from dependency to self-sustainability through a focus on education and teacher development.</p>
+          <p class="text-gray-700 mb-6 text-lg">American Education and Teachers is a non-governmental organization dedicated to empowering communities in Africa. Founded in 2024, our mission is to create a pathway for families to transition from dependency to self-sustainability through a focus on education and teacher development.</p>
           <a href="about.html"
             class="inline-block bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full donate-btn">
             Our Story</a>
@@ -190,20 +189,16 @@
         <div class="md:w-1/2" data-aos="fade-left">
           <div class="grid grid-cols-2 gap-4">
             <div class="overflow-hidden rounded-lg shadow-lg">
-              <img src="images/Home page/1.jpg" alt="Children at school" class="w-full h-full object-cover"
-                data-cms-bind="about_image_1">
+              <img src="{{about.images.[0]}}" alt="Children at school" class="w-full h-full object-cover">
             </div>
             <div class="overflow-hidden rounded-lg shadow-lg">
-              <img src="images/Home page/2.jpg" alt="Medical care" class="w-full h-full object-cover"
-                data-cms-bind="about_image_2">
+              <img src="{{about.images.[1]}}" alt="Medical care" class="w-full h-full object-cover">
             </div>
             <div class="overflow-hidden rounded-lg shadow-lg">
-              <img src="images/Home page/3.jpg" alt="Students learning" class="w-full h-full object-cover"
-                data-cms-bind="about_image_3">
+              <img src="{{about.images.[2]}}" alt="Community support" class="w-full h-full object-cover">
             </div>
             <div class="overflow-hidden rounded-lg shadow-lg">
-              <img src="images/Home page/4.jpg" alt="Children's home" class="w-full h-full object-cover"
-                data-cms-bind="about_image_4">
+              <img src="{{about.images.[3]}}" alt="Sustainable farming" class="w-full h-full object-cover">
             </div>
           </div>
         </div>
@@ -214,117 +209,85 @@
   <section class="py-20 bg-gray-100">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4" data-cms-bind="programs_title">Our
-          Programs</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto" data-cms-bind="programs_subtitle">We provide comprehensive support to
-          orphans and displaced families through education, medical care, emergency relief, and sustainable farming.</p>
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4">Our Programs</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">We provide comprehensive support to orphans and displaced families through education, medical care, emergency relief, and sustainable farming.</p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        
         <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
           <div class="section-icon">
-            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/ed-1.png" alt="Education icon"
-              class="w-12 h-12" data-cms-bind="education_icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/ed-1.png" alt="Education icon" class="w-12 h-12">
           </div>
-          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center" data-cms-bind="education_title">
-            Education</h3>
-          <p class="text-gray-700 mb-6" data-cms-bind="education_paragraph_1"><strong>Vocational Training
-              Institute</strong> provides skills in tailoring, knitting, carpentry, and more for orphans who were unable
-            to return to school.</p>
-          <p class="text-gray-700 mb-6" data-cms-bind="education_paragraph_2"><strong>Our Community School</strong>
-            specializes in providing education and care to children with disabilities.</p>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Education</h3>
+          <p class="text-gray-700 mb-6"><strong>Vocational Training Institute</strong> provides skills in tailoring, knitting, carpentry, and more for orphans who were unable to return to school.</p>
+          <p class="text-gray-700 mb-6"><strong>Our Community School</strong> specializes in providing education and care to children with disabilities.</p>
           <a href="programs.html#education"
-            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center"
-            data-cms-bind="education_button">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i
+              data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
         </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up"
-          data-aos-delay="100">
-          <div class="section-icon">
-            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/medical.png" alt="Medical icon"
-              class="w-12 h-12" data-cms-bind="medical_icon">
-          </div>
-          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center" data-cms-bind="medical_title">
-            Medical</h3>
-          <p class="text-gray-700 mb-6" data-cms-bind="medical_paragraph_1"><strong>Medical Clinic</strong> offers HIV
-            and AIDS positive treatment to orphans and their caretakers, in addition to general medical services.</p>
-          <p class="text-gray-700 mb-6" data-cms-bind="medical_paragraph_2"><strong>Children's Home</strong> cares for
-            children ages 2 months to 17 years old by providing opportunities for education and healthy lives.</p>
-          <a href="programs.html#medical"
-            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center"
-            data-cms-bind="medical_button">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up"
-          data-aos-delay="200">
-          <div class="section-icon">
-            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/fund.png" alt="Emergency icon"
-              class="w-12 h-12" data-cms-bind="relief_icon">
-          </div>
-          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center" data-cms-bind="relief_title">
-            Emergency Relief Fund</h3>
-          <p class="text-gray-700 mb-6" data-cms-bind="relief_paragraph_1">We have created an emergency relief fund to
-            address unexpected specific medical needs such as discovery of cancers, tumors, chronic illnesses, and
-            congenital diseases.</p>
-          <p class="text-gray-700 mb-6" data-cms-bind="relief_paragraph_2">Oftentimes, it's orphans who are in need of
-            emergency medical procedures who benefit from this relief fund.</p>
-          <a href="programs.html#relief"
-            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center"
-            data-cms-bind="relief_button">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
-        </div>
-
+        
         <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
           <div class="section-icon">
-            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/scholarships.png" alt="Scholarship icon"
-              class="w-12 h-12" data-cms-bind="scholarships_icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/medical.png" alt="Medical icon" class="w-12 h-12">
           </div>
-          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center"
-            data-cms-bind="scholarships_title">Scholarships</h3>
-          <p class="text-gray-700 mb-6" data-cms-bind="scholarships_paragraph_1">We serve our families and children for
-            more than just a particular season. We fund as many young adults as financially possible into higher
-            education.</p>
-          <p class="text-gray-700 mb-6" data-cms-bind="scholarships_paragraph_2">Our goal is for all AEaT children to
-            have the opportunity of seeking higher education.</p>
-          <a href="programs.html#scholarships"
-            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center"
-            data-cms-bind="scholarships_button">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Medical</h3>
+          <p class="text-gray-700 mb-6"><strong>Medical Clinic</strong> offers HIV and AIDS positive treatment to orphans and their caretakers, in addition to general medical services.</p>
+          <p class="text-gray-700 mb-6"><strong>Children's Home</strong> cares for children ages 2 months to 17 years old by providing opportunities for education and healthy lives.</p>
+          <a href="programs.html#medical"
+            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i
+              data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
         </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up"
-          data-aos-delay="100">
+        
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
           <div class="section-icon">
-            <img src="https://bringinghopeusa.org/wp-content/uploads/2021/01/map-1.png" alt="Sustainability icon"
-              class="w-12 h-12" data-cms-bind="sustainability_icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/fund.png" alt="Emergency Relief Fund icon" class="w-12 h-12">
           </div>
-          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center"
-            data-cms-bind="sustainability_title">Sustainability</h3>
-          <p class="text-gray-700 mb-6" data-cms-bind="sustainability_paragraph_1">We walk alongside AEaT's children and
-            families throughout their lives because we believe the key to changing the future is fostering long-term
-            sustainability.</p>
-          <p class="text-gray-700 mb-6" data-cms-bind="sustainability_paragraph_2"><strong>AEaT Farms</strong> provides
-            access to healthy produce for students, families, and staff of AEaT.</p>
-          <a href="programs.html#sustainability"
-            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center"
-            data-cms-bind="sustainability_button">Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Emergency Relief Fund</h3>
+          <p class="text-gray-700 mb-6">We have created an emergency relief fund to address unexpected specific medical needs such as discovery of cancers, tumors, chronic illnesses, and congenital diseases.</p>
+          <p class="text-gray-700 mb-6">Oftentimes, it's orphans who are in need of emergency medical procedures who benefit from this relief fund.</p>
+          <a href="programs.html#relief"
+            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i
+              data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
         </div>
+        
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
+          <div class="section-icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2020/12/scholarships.png" alt="Scholarships icon" class="w-12 h-12">
+          </div>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Scholarships</h3>
+          <p class="text-gray-700 mb-6">We serve our families and children for more than just a particular season. We fund as many young adults as financially possible into higher education.</p>
+          <p class="text-gray-700 mb-6">Our goal is for all AEaT children to have the opportunity of seeking higher education.</p>
+          <a href="programs.html#scholarships"
+            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i
+              data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+        </div>
+        
+        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up">
+          <div class="section-icon">
+            <img src="https://bringinghopeusa.org/wp-content/uploads/2021/01/map-1.png" alt="Sustainability icon" class="w-12 h-12">
+          </div>
+          <h3 class="heading-font text-2xl font-bold text-green-800 mb-4 text-center">Sustainability</h3>
+          <p class="text-gray-700 mb-6">We walk alongside AEaT's children and families throughout their lives because we believe the key to changing the future is fostering long-term sustainability.</p>
+          <p class="text-gray-700 mb-6"><strong>AEaT Farms</strong> provides access to healthy produce for students, families, and staff of AEaT.</p>
+          <a href="programs.html#sustainability"
+            class="text-green-700 font-medium hover:text-green-800 flex items-center justify-center">Learn More <i
+              data-feather="arrow-right" class="ml-2 w-4 h-4"></i></a>
+        </div>
+        
 
         <div
           class="bg-green-800 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col justify-center"
           data-aos="fade-up" data-aos-delay="200">
-          <h3 class="heading-font text-2xl font-bold text-white mb-4 text-center" data-cms-bind="involved_title">Join
-            Our Work</h3>
-          <p class="text-green-100 mb-6 text-center" data-cms-bind="involved_subtitle">Your support can change lives.
-            Become part of our mission to bring hope to families in Africa.</p>
+          <h3 class="heading-font text-2xl font-bold text-white mb-4 text-center">Join Our Work</h3>
+          <p class="text-green-100 mb-6 text-center">Your support can change lives. Become part of our mission to bring hope to families in Africa.</p>
           <div class="flex flex-col space-y-4">
             <a href="donate.html"
-              class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-6 rounded-full text-center donate-btn"
-              data-cms-bind="involved_button_donate">Donate Now</a>
+              class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-6 rounded-full text-center donate-btn">Donate Now</a>
             <a href="get-involved.html"
-              class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-6 rounded-full text-center transition-colors"
-              data-cms-bind="involved_button_volunteer">Volunteer</a>
+              class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-6 rounded-full text-center transition-colors">Volunteer</a>
             <a href="get-involved.html#sponsor"
-              class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-6 rounded-full text-center transition-colors"
-              data-cms-bind="involved_button_sponsor">Sponsor a Child</a>
+              class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-6 rounded-full text-center transition-colors">Sponsor a Child</a>
           </div>
         </div>
       </div>
@@ -334,27 +297,31 @@
   <section class="py-20 bg-green-800 text-white">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4" data-cms-bind="impact_title">Our Impact</h2>
-        <p class="text-green-100 max-w-2xl mx-auto" data-cms-bind="impact_subtitle">We've been transforming lives in
-          Africa through sustainable programs.</p>
+        <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Our Impact</h2>
+        <p class="text-green-100 max-w-2xl mx-auto">We've been transforming lives in Africa through sustainable programs.</p>
       </div>
       <div class="grid md:grid-cols-4 gap-8 text-center">
+        
         <div class="p-6" data-aos="fade-up">
-          <div class="text-4xl font-bold mb-2" data-cms-bind="impact_metric_1_number">2000+</div>
-          <div class="text-green-200" data-cms-bind="impact_metric_1_label">Children Educated</div>
+          <div class="text-4xl font-bold mb-2">2000+</div>
+          <div class="text-green-200">Children Educated</div>
         </div>
-        <div class="p-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-4xl font-bold mb-2" data-cms-bind="impact_metric_2_number">500+</div>
-          <div class="text-green-200" data-cms-bind="impact_metric_2_label">Medical Patients</div>
+        
+        <div class="p-6" data-aos="fade-up">
+          <div class="text-4xl font-bold mb-2">500+</div>
+          <div class="text-green-200">Medical Patients</div>
         </div>
-        <div class="p-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="text-4xl font-bold mb-2" data-cms-bind="impact_metric_3_number">100+</div>
-          <div class="text-green-200" data-cms-bind="impact_metric_3_label">Vocational Graduates</div>
+        
+        <div class="p-6" data-aos="fade-up">
+          <div class="text-4xl font-bold mb-2">100+</div>
+          <div class="text-green-200">Vocational Graduates</div>
         </div>
-        <div class="p-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="text-4xl font-bold mb-2" data-cms-bind="impact_metric_4_number">20+</div>
-          <div class="text-green-200" data-cms-bind="impact_metric_4_label">Years of Service</div>
+        
+        <div class="p-6" data-aos="fade-up">
+          <div class="text-4xl font-bold mb-2">20+</div>
+          <div class="text-green-200">Years of Service</div>
         </div>
+        
       </div>
     </div>
   </section>
@@ -362,77 +329,70 @@
   <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4" data-cms-bind="testimonials_title">
-          Stories of Hope</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto" data-cms-bind="testimonials_subtitle">Hear from those whose lives
-          have been transformed through our programs.</p>
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4">Stories of Hope</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Hear from those whose lives have been transformed through our programs.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
+        
         <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up">
           <div class="text-green-700 mb-4"><i data-feather="quote" class="w-8 h-8"></i></div>
-          <p class="text-gray-700 italic mb-6" data-cms-bind="testimonial_1_quote">"Thanks to the vocational training, I
-            now have skills to support my family. I opened a small tailoring shop in my village."</p>
+          <p class="text-gray-700 italic mb-6">"Thanks to the vocational training, I now have skills to support my family. I opened a small tailoring shop in my village."</p>
           <div class="flex items-center">
             <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-              <img src="https://via.placeholder.com/200" alt="Student" class="w-full h-full object-cover"
-                data-cms-bind="testimonial_1_image">
+              <img src="https://via.placeholder.com/200" alt="Sarah K." class="w-full h-full object-cover">
             </div>
             <div>
-              <div class="font-bold" data-cms-bind="testimonial_1_name">Sarah K.</div>
-              <div class="text-sm text-gray-500" data-cms-bind="testimonial_1_role">Vocational Graduate</div>
+              <div class="font-bold">Sarah K.</div>
+              <div class="text-sm text-gray-500">Vocational Graduate</div>
             </div>
           </div>
         </div>
-
-        <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up">
           <div class="text-green-700 mb-4"><i data-feather="quote" class="w-8 h-8"></i></div>
-          <p class="text-gray-700 italic mb-6" data-cms-bind="testimonial_2_quote">"The medical clinic saved my life
-            when I was diagnosed with HIV. Now I receive treatment and can care for my children."</p>
+          <p class="text-gray-700 italic mb-6">"The medical clinic saved my life when I was diagnosed with HIV. Now I receive treatment and can care for my children."</p>
           <div class="flex items-center">
             <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-              <img src="https://via.placeholder.com/200" alt="Patient" class="w-full h-full object-cover"
-                data-cms-bind="testimonial_2_image">
+              <img src="https://via.placeholder.com/200" alt="James M." class="w-full h-full object-cover">
             </div>
             <div>
-              <div class="font-bold" data-cms-bind="testimonial_2_name">James M.</div>
-              <div class="text-sm text-gray-500" data-cms-bind="testimonial_2_role">Clinic Patient</div>
+              <div class="font-bold">James M.</div>
+              <div class="text-sm text-gray-500">Clinic Patient</div>
             </div>
           </div>
         </div>
-
-        <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+        
+        <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up">
           <div class="text-green-700 mb-4"><i data-feather="quote" class="w-8 h-8"></i></div>
-          <p class="text-gray-700 italic mb-6" data-cms-bind="testimonial_3_quote">"My son with disabilities is thriving
-            at School. For the first time, he's learning and making friends."</p>
+          <p class="text-gray-700 italic mb-6">"My son with disabilities is thriving at School. For the first time, he's learning and making friends."</p>
           <div class="flex items-center">
             <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-              <img src="https://via.placeholder.com/200" alt="Parent" class="w-full h-full object-cover"
-                data-cms-bind="testimonial_3_image">
+              <img src="https://via.placeholder.com/200" alt="Grace N." class="w-full h-full object-cover">
             </div>
             <div>
-              <div class="font-bold" data-cms-bind="testimonial_3_name">Grace N.</div>
-              <div class="text-sm text-gray-500" data-cms-bind="testimonial_3_role">Parent</div>
+              <div class="font-bold">Grace N.</div>
+              <div class="text-sm text-gray-500">Parent</div>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
 
   <section class="py-20 bg-green-700 text-white">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up" data-cms-bind="cta_title">Ready to
-        Make a Difference?</h2>
-      <p class="text-xl max-w-2xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100" data-cms-bind="cta_subtitle">
+      <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Make a Difference?</h2>
+      <p class="text-xl max-w-2xl mx-auto mb-8" data-aos="fade-up" data-aos-delay="100">
         Your support helps us continue transforming lives in all over the continent.</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
         <a href="donate.html"
-          class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-8 rounded-full donate-btn"
-          data-cms-bind="cta_button_donate">Donate Now</a>
+          class="bg-white hover:bg-gray-100 text-green-800 font-bold py-3 px-8 rounded-full donate-btn">
+          Donate Now</a>
         <a href="#contact"
-          class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-8 rounded-full transition-colors"
-          data-cms-bind="cta_button_contact">Contact Us</a>
+          class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-bold py-3 px-8 rounded-full transition-colors">
+          Contact Us</a>
       </div>
     </div>
   </section>
@@ -440,10 +400,9 @@
   <section id="contact" class="py-20 bg-gray-100">
     <div class="container mx-auto px-6 max-w-3xl">
       <div class="text-center mb-12">
-        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4" data-cms-bind="contact_title">
+        <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4">
           Contact Us</h2>
-        <p class="text-gray-600" data-cms-bind="contact_subtitle">We’d love to hear from you! Fill out the form below
-          and we’ll respond as soon as possible.</p>
+        <p class="text-gray-600">We’d love to hear from you! Fill out the form below and we’ll respond as soon as possible.</p>
       </div>
 
       <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
@@ -453,29 +412,29 @@
           <label class="block text-gray-700 font-medium mb-2" data-cms-bind="form_label_name">Name</label>
           <input type="text" name="name" required
             class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
-            data-cms-bind="form_input_name">
-        </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 font-medium mb-2" data-cms-bind="form_label_email">Email</label>
-          <input type="email" name="email" required
-            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
-            data-cms-bind="form_input_email">
-        </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 font-medium mb-2" data-cms-bind="form_label_message">Message</label>
-          <textarea name="message" rows="5" required
-            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
-            data-cms-bind="form_input_message"></textarea>
-        </div>
+            </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2" data-cms-bind="form_label_email">Email</label>
+            <input type="email" name="email" required
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+              data-cms-bind="form_input_email">
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2" data-cms-bind="form_label_message">Message</label>
+            <textarea name="message" rows="5" required
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600"
+              data-cms-bind="form_input_message"></textarea>
+          </div>
 
-        <div id="formStatus" class="mb-4 text-center hidden"></div>
+          <div id="formStatus" class="mb-4 text-center hidden"></div>
 
-        <button type="submit"
-          class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full w-full donate-btn"
-          data-cms-bind="form_button">Send Message</button>
+          <button type="submit"
+            class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-full w-full donate-btn"
+            data-cms-bind="form_button">Send Message</button>
 
-        <noscript class="text-sm text-gray-500 mt-2 block" data-cms-bind="form_noscript">If JavaScript is disabled, the
-          form will submit normally. Please ensure your form action is set correctly.</noscript>
+          <noscript class="text-sm text-gray-500 mt-2 block" data-cms-bind="form_noscript">If JavaScript is disabled,
+            the
+            form will submit normally. Please ensure your form action is set correctly.</noscript>
       </form>
     </div>
   </section>

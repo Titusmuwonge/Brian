@@ -1,0 +1,49 @@
+{
+    "slug": "about",
+    "title": "About Us",
+    "hero": {
+        "title": "Our Story",
+        "subtitle": "Changing families from dependency to self sustainability in Africa.",
+        "image": "images/about page/pexels-akoonie-27586359.jpg"
+    },
+    "mission": {
+        "title": "Our Mission",
+        "subtitle": "Serving the underserved with sustainable solutions",
+        "textTitle": "Who We Are",
+        "text1": "American Education and Teachers (AEaT) is a faith-based non-profit organization dedicated to empowering orphans and vulnerable families.",
+        "text2": "Our organization is rooted in the community it serves. We work hand-in-hand with local leaders to deliver comprehensive programs in education, medical care, and economic sustainability.",
+        "image": "images/about page/allen-meki-rOCgRdENX54-unsplash.jpg"
+    },
+    "values": {
+        "title": "Our Core Values",
+        "items": [
+            {
+                "icon": "heart",
+                "title": "Faith",
+                "text": "Our work is guided by faith, hope, and compassion for all people."
+            },
+            {
+                "icon": "check-circle",
+                "title": "Integrity",
+                "text": "We operate with transparency and accountability to our donors and the communities we serve."
+            },
+            {
+                "icon": "sun",
+                "title": "Empowerment",
+                "text": "We provide tools and training to empower individuals toward self-sufficiency."
+            }
+        ]
+    },
+    "leadership": {
+        "title": "Leadership",
+        "subtitle": "The team dedicated to our mission",
+        "image": "images/about page/leadership.jpg",
+        "text1": "American Education and Teachers is guided by dedicated leaders in both Africa and the USA. Together, they ensure accountability, transparency, and long-term sustainability in every initiative.",
+        "text2": "Their vision is rooted in faith, compassion, and a firm belief that communities can rise when given the right tools, resources, and opportunities."
+    },
+    "cta": {
+        "title": "Be Part of the Story",
+        "text": "Your support allows us to continue transforming lives. Whether through donations, volunteering, or spreading the word — you are bringing hope to families in Africa.",
+        "linkText": "Get Involved"
+    }
+}

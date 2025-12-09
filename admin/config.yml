@@ -1,0 +1,457 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "index"
+        label: "Home Page"
+        file: "content/pages/index.json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "index"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
+              - label: "Buttons"
+                name: "buttons"
+                widget: "object"
+                fields:
+                  - label: "Donate Button"
+                    name: "donate"
+                    widget: "object"
+                    fields:
+                      - {label: "Text", name: "text", widget: "string"}
+                      - {label: "URL", name: "url", widget: "string"}
+                  - label: "Learn More Button"
+                    name: "learnMore"
+                    widget: "object"
+                    fields:
+                      - {label: "Text", name: "text", widget: "string"}
+                      - {label: "URL", name: "url", widget: "string"}
+
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Paragraph", name: "paragraph", widget: "text"}
+              - {label: "Button Text", name: "buttonText", widget: "string"}
+              - {label: "Button URL", name: "buttonUrl", widget: "string"}
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                field: {label: "Image", name: "image", widget: "image"}
+
+          - label: "Programs Section"
+            name: "programs"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+              - label: "Program Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon URL", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description 1", name: "description1", widget: "string"}
+                  - {label: "Description 2", name: "description2", widget: "string"}
+                  - {label: "Link", name: "link", widget: "string"}
+              - label: "Join Section"
+                name: "join"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string"}
+                  - {label: "Donate Button Text", name: "donateText", widget: "string"}
+                  - {label: "Volunteer Button Text", name: "volunteerText", widget: "string"}
+                  - {label: "Sponsor Button Text", name: "sponsorText", widget: "string"}
+
+          - label: "Impact Section"
+            name: "impact"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Metrics"
+                name: "metrics"
+                widget: "list"
+                fields:
+                  - {label: "Number", name: "number", widget: "string"}
+                  - {label: "Label", name: "label", widget: "string"}
+
+          - label: "Testimonials Section"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Testimonials"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Quote", name: "quote", widget: "text"}
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Role", name: "role", widget: "string"}
+
+          - label: "CTA Section"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Donate Button Text", name: "donateText", widget: "string"}
+              - {label: "Contact Button Text", name: "contactText", widget: "string"}
+
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+
+      - name: "about"
+        label: "About Page"
+        file: "content/pages/about.json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "about"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
+
+          - label: "Mission Section"
+            name: "mission"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Text Title", name: "textTitle", widget: "string"}
+              - {label: "Text 1", name: "text1", widget: "text"}
+              - {label: "Text 2", name: "text2", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+
+          - label: "Values Section"
+            name: "values"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Values"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "string"}
+
+          - label: "Leadership Section"
+            name: "leadership"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Text 1", name: "text1", widget: "text"}
+              - {label: "Text 2", name: "text2", widget: "text"}
+
+          - label: "CTA Section"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Link Text", name: "linkText", widget: "string"}
+
+      - name: "programs"
+        label: "Programs Page"
+        file: "content/pages/programs.json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "programs"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
+
+          - label: "Education Section"
+            name: "education"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro Text", name: "introText", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+
+          - label: "Medical Section"
+            name: "medical"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro Text", name: "introText", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+
+          - label: "Children's Home Section"
+            name: "childrensHome"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro Text", name: "introText", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+
+          - label: "Sustainability Section"
+            name: "sustainability"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro Text", name: "introText", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+
+      - name: "get-involved"
+        label: "Get Involved Page"
+        file: "content/pages/get-involved.json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "get-involved"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
+
+          - label: "Ways to Make a Difference"
+            name: "ways"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+                  - {label: "Link Text", name: "linkText", widget: "string"}
+                  - {label: "Link URL", name: "linkUrl", widget: "string"}
+
+          - label: "Sponsor a Child Section"
+            name: "sponsor"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+              - {label: "Link Text", name: "linkText", widget: "string"}
+              - {label: "Link URL", name: "linkUrl", widget: "string"}
+
+          - label: "Volunteer Opportunities"
+            name: "volunteer"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - label: "Local Volunteering"
+                name: "local"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Intro", name: "intro", widget: "text"}
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    field: {label: "Item", name: "item", widget: "string"}
+                  - {label: "Link Text", name: "linkText", widget: "string"}
+                  - {label: "Link URL", name: "linkUrl", widget: "string"}
+              - label: "Remote Volunteering"
+                name: "remote"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Intro", name: "intro", widget: "text"}
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    field: {label: "Item", name: "item", widget: "string"}
+                  - {label: "Link Text", name: "linkText", widget: "string"}
+                  - {label: "Link URL", name: "linkUrl", widget: "string"}
+
+          - label: "Fundraising Section"
+            name: "fundraising"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+                  - {label: "Link Text", name: "linkText", widget: "string"}
+                  - {label: "Link URL", name: "linkUrl", widget: "string"}
+              - label: "Support Box"
+                name: "supportBox"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+                  - {label: "Link Text", name: "linkText", widget: "string"}
+                  - {label: "Link URL", name: "linkUrl", widget: "string"}
+
+      - name: "donate"
+        label: "Donate Page"
+        file: "content/pages/donate.json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "donate"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
+
+          - label: "Donation Section"
+            name: "donation"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Amounts"
+                name: "amounts"
+                widget: "list"
+                fields:
+                  - {label: "Amount (Number)", name: "amount", widget: "number"}
+                  - {label: "Button Text", name: "text", widget: "string"}
+              - {label: "Custom Amount Label", name: "customLabel", widget: "string"}
+              - {label: "Donate Button Text", name: "buttonText", widget: "string"}
+
+          - label: "Video Section"
+            name: "video"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Video File", name: "file", widget: "file"}
+              - {label: "Poster Image", name: "poster", widget: "image"}
+
+          - label: "Impact Section"
+            name: "impact"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+
+      - name: "contact"
+        label: "Contact Page"
+        file: "content/pages/contact.json"
+        fields:
+          - {label: "Slug", name: "slug", widget: "hidden", default: "contact"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Background Image", name: "image", widget: "image"}
+
+          - label: "Contact Information"
+            name: "contactInfo"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Icon Name (Feather)", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Text", name: "text", widget: "text"}
+
+          - label: "Contact Form"
+            name: "form"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Name Label", name: "nameLabel", widget: "string"}
+              - {label: "Email Label", name: "emailLabel", widget: "string"}
+              - {label: "Subject Label", name: "subjectLabel", widget: "string"}
+              - {label: "Message Label", name: "messageLabel", widget: "string"}
+              - {label: "Button Text", name: "buttonText", widget: "string"}
+
+          - label: "Map Section"
+            name: "map"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Map Iframe Source URL", name: "iframeSrc", widget: "string"}

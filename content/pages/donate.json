@@ -1,0 +1,58 @@
+{
+    "slug": "donate",
+    "title": "Donate",
+    "hero": {
+        "title": "Donate to AEaT",
+        "subtitle": "Your generosity provides hope, healing, and a future to families in Africa.",
+        "image": "images/donate page/Hero.jpg"
+    },
+    "donation": {
+        "title": "Make a Difference Today",
+        "subtitle": "Every contribution, big or small, helps us provide essential services to vulnerable communities. Please select a donation amount below or enter a custom amount.",
+        "amounts": [
+            {
+                "amount": 25,
+                "text": "$25"
+            },
+            {
+                "amount": 50,
+                "text": "$50"
+            },
+            {
+                "amount": 100,
+                "text": "$100"
+            },
+            {
+                "amount": 500,
+                "text": "$500"
+            }
+        ],
+        "customLabel": "Or enter a custom amount:",
+        "buttonText": "Donate Now"
+    },
+    "video": {
+        "title": "A Special Message for You",
+        "file": "images/donate page/thank-you.mp4",
+        "poster": "images/donate page/Hero.jpg"
+    },
+    "impact": {
+        "title": "Your Donation at Work",
+        "items": [
+            {
+                "image": "images/donate page/Class.jpg",
+                "title": "Education",
+                "description": "Provide school fees, supplies, and uniforms for orphaned children."
+            },
+            {
+                "image": "images/donate page/Medical.jpg",
+                "title": "Medical Care",
+                "description": "Support emergency procedures, HIV treatment, and health initiatives for vulnerable families."
+            },
+            {
+                "image": "images/donate page/tunde-buremo-NgH0WKgVR0A-unsplash.jpg",
+                "title": "Sustainability",
+                "description": "Invest in farms, clean water projects, and long-term programs that create self-sustaining communities."
+            }
+        ]
+    }
+}

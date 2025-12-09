@@ -27,5 +27,109 @@
             "images/Home page/3.jpg",
             "images/Home page/4.jpg"
         ]
+    },
+    "programs": {
+        "title": "Our Programs",
+        "subtitle": "We provide comprehensive support to orphans and displaced families through education, medical care, emergency relief, and sustainable farming.",
+        "items": [
+            {
+                "icon": "https://bringinghopeusa.org/wp-content/uploads/2020/12/ed-1.png",
+                "title": "Education",
+                "description1": "<strong>Vocational Training Institute</strong> provides skills in tailoring, knitting, carpentry, and more for orphans who were unable to return to school.",
+                "description2": "<strong>Our Community School</strong> specializes in providing education and care to children with disabilities.",
+                "link": "programs.html#education"
+            },
+            {
+                "icon": "https://bringinghopeusa.org/wp-content/uploads/2020/12/medical.png",
+                "title": "Medical",
+                "description1": "<strong>Medical Clinic</strong> offers HIV and AIDS positive treatment to orphans and their caretakers, in addition to general medical services.",
+                "description2": "<strong>Children's Home</strong> cares for children ages 2 months to 17 years old by providing opportunities for education and healthy lives.",
+                "link": "programs.html#medical"
+            },
+            {
+                "icon": "https://bringinghopeusa.org/wp-content/uploads/2020/12/fund.png",
+                "title": "Emergency Relief Fund",
+                "description1": "We have created an emergency relief fund to address unexpected specific medical needs such as discovery of cancers, tumors, chronic illnesses, and congenital diseases.",
+                "description2": "Oftentimes, it's orphans who are in need of emergency medical procedures who benefit from this relief fund.",
+                "link": "programs.html#relief"
+            },
+            {
+                "icon": "https://bringinghopeusa.org/wp-content/uploads/2020/12/scholarships.png",
+                "title": "Scholarships",
+                "description1": "We serve our families and children for more than just a particular season. We fund as many young adults as financially possible into higher education.",
+                "description2": "Our goal is for all AEaT children to have the opportunity of seeking higher education.",
+                "link": "programs.html#scholarships"
+            },
+            {
+                "icon": "https://bringinghopeusa.org/wp-content/uploads/2021/01/map-1.png",
+                "title": "Sustainability",
+                "description1": "We walk alongside AEaT's children and families throughout their lives because we believe the key to changing the future is fostering long-term sustainability.",
+                "description2": "<strong>AEaT Farms</strong> provides access to healthy produce for students, families, and staff of AEaT.",
+                "link": "programs.html#sustainability"
+            }
+        ],
+        "join": {
+            "title": "Join Our Work",
+            "subtitle": "Your support can change lives. Become part of our mission to bring hope to families in Africa.",
+            "donateText": "Donate Now",
+            "volunteerText": "Volunteer",
+            "sponsorText": "Sponsor a Child"
+        }
+    },
+    "impact": {
+        "title": "Our Impact",
+        "subtitle": "We've been transforming lives in Africa through sustainable programs.",
+        "metrics": [
+            {
+                "number": "2000+",
+                "label": "Children Educated"
+            },
+            {
+                "number": "500+",
+                "label": "Medical Patients"
+            },
+            {
+                "number": "100+",
+                "label": "Vocational Graduates"
+            },
+            {
+                "number": "20+",
+                "label": "Years of Service"
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Stories of Hope",
+        "subtitle": "Hear from those whose lives have been transformed through our programs.",
+        "items": [
+            {
+                "quote": "\"Thanks to the vocational training, I now have skills to support my family. I opened a small tailoring shop in my village.\"",
+                "image": "https://via.placeholder.com/200",
+                "name": "Sarah K.",
+                "role": "Vocational Graduate"
+            },
+            {
+                "quote": "\"The medical clinic saved my life when I was diagnosed with HIV. Now I receive treatment and can care for my children.\"",
+                "image": "https://via.placeholder.com/200",
+                "name": "James M.",
+                "role": "Clinic Patient"
+            },
+            {
+                "quote": "\"My son with disabilities is thriving at School. For the first time, he's learning and making friends.\"",
+                "image": "https://via.placeholder.com/200",
+                "name": "Grace N.",
+                "role": "Parent"
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to Make a Difference?",
+        "subtitle": "Your support helps us continue transforming lives in all over the continent.",
+        "donateText": "Donate Now",
+        "contactText": "Contact Us"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "We’d love to hear from you! Fill out the form below and we’ll respond as soon as possible."
     }
 }

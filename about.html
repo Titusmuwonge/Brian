@@ -1,201 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-cms-bind="page_title">About Us | American Education and Teachers</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    .heading-font { font-family: 'Playfair Display', serif; }
-    :root {
-    --color-primary-800: #FF6600; /* A strong, vibrant orange */
-    --color-primary-700: #FF8C00; /* A slightly lighter orange */
-    --color-primary-100: #FFF5E6; /* A very light orange */
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-cms-bind="page_title">About Us | American Education and Teachers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
 
-  /* Replace green classes with CSS variables */
-  .text-green-800, .hover\:text-green-800:hover, .text-green-700, .bg-green-800, .bg-green-700, .bg-green-100, .hover\:text-green-600:hover {
-    color: var(--color-primary-800);
-  }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
 
-  .text-green-800 { color: var(--color-primary-800); }
-  .text-green-700 { color: var(--color-primary-700); }
-  .text-green-100 { color: var(--color-primary-100); }
+        :root {
+            --color-primary-800: #FF6600;
+            /* A strong, vibrant orange */
+            --color-primary-700: #FF8C00;
+            /* A slightly lighter orange */
+            --color-primary-100: #FFF5E6;
+            /* A very light orange */
+        }
 
-  .bg-green-800 { background-color: var(--color-primary-800); }
-  .bg-green-700 { background-color: var(--color-primary-700); }
-  .bg-green-100 { background-color: var(--color-primary-100); }
-  .hover\:text-green-800:hover { color: var(--color-primary-800); }
-  .hover\:text-green-600:hover { color: var(--color-primary-700); }
-  .focus\:ring-green-700:focus { --tw-ring-color: var(--color-primary-700); }
+        /* Replace green classes with CSS variables */
+        .text-green-800,
+        .hover\:text-green-800:hover,
+        .text-green-700,
+        .bg-green-800,
+        .bg-green-700,
+        .bg-green-100,
+        .hover\:text-green-600:hover {
+            color: var(--color-primary-800);
+        }
 
-  /* Update hardcoded CSS colors */
-  .hero-gradient { background: linear-gradient(135deg, rgba(255,102,0,0.9) 0%, rgba(255,102,0,0.7) 100%); }
-  .section-icon { background-color: #FF6600; }
-  </style>
+        .text-green-800 {
+            color: var(--color-primary-800);
+        }
+
+        .text-green-700 {
+            color: var(--color-primary-700);
+        }
+
+        .text-green-100 {
+            color: var(--color-primary-100);
+        }
+
+        .bg-green-800 {
+            background-color: var(--color-primary-800);
+        }
+
+        .bg-green-700 {
+            background-color: var(--color-primary-700);
+        }
+
+        .bg-green-100 {
+            background-color: var(--color-primary-100);
+        }
+
+        .hover\:text-green-800:hover {
+            color: var(--color-primary-800);
+        }
+
+        .hover\:text-green-600:hover {
+            color: var(--color-primary-700);
+        }
+
+        .focus\:ring-green-700:focus {
+            --tw-ring-color: var(--color-primary-700);
+        }
+
+        /* Update hardcoded CSS colors */
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255, 102, 0, 0.9) 0%, rgba(255, 102, 0, 0.7) 100%);
+        }
+
+        .section-icon {
+            background-color: #FF6600;
+        }
+    </style>
 </head>
+
 <body class="bg-gray-50">
 
-<nav class="bg-white shadow-md sticky top-0 z-50">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="index.html" class="flex items-center">
-      <img src="images/logo1.png" alt="AEaT Logo" class="h-16" data-cms-bind="nav_logo">
-    </a>
-    <div class="hidden md:flex space-x-8">
-      <a href="index.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_home">Home</a>
-      <a href="about.html" class="text-green-800 font-medium" data-cms-bind="nav_about">About</a>
-      <a href="programs.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_programs">Programs</a>
-      <a href="get-involved.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_involved">Get Involved</a>
-      <a href="contact.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<section class="relative h-96 flex items-center justify-center text-white">
-  <div class="absolute inset-0 bg-black opacity-50"></div>
-  <img src="images/about page/pexels-akoonie-27586359.jpg" alt="About Us" class="absolute inset-0 w-full h-full object-cover" data-cms-bind="hero_image">
-  <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-    <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up" data-cms-bind="hero_title">Our Story</h1>
-    <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100" data-cms-bind="hero_subtitle">Changing families from dependency to self sustainability in Africa.</p>
-  </div>
-</section>
-
-<section class="py-20 bg-white">
-  <div class="container mx-auto px-6 max-w-4xl">
-    <div class="text-center mb-16">
-      <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4" data-aos="fade-up" data-cms-bind="mission_title">Our Mission</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100" data-cms-bind="mission_subtitle">Serving the underserved with sustainable solutions</p>
-    </div>
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div data-aos="fade-right">
-        <h3 class="text-2xl font-bold text-green-700 mb-4" data-cms-bind="mission_text_title">Who We Are</h3>
-        <p class="text-gray-700 mb-6" data-cms-bind="mission_text_1">American Education and Teachers (AEaT) is a faith-based non-profit organization dedicated to empowering orphans and vulnerable families.</p>
-        <p class="text-gray-700 mb-6" data-cms-bind="mission_text_2">Our organization is rooted in the community it serves. We work hand-in-hand with local leaders to deliver comprehensive programs in education, medical care, and economic sustainability.</p>
-      </div>
-      <div data-aos="fade-left">
-        <img src="images/about page/allen-meki-rOCgRdENX54-unsplash.jpg" alt="Community" class="rounded-xl shadow-lg" data-cms-bind="mission_image">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-20 bg-gray-100">
-  <div class="container mx-auto px-6 max-w-4xl text-center">
-    <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-12" data-cms-bind="values_title">Our Core Values</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div data-aos="fade-up" data-aos-delay="0">
-        <div class="text-green-700 mb-4"><i data-feather="heart" class="w-10 h-10 mx-auto"></i></div>
-        <h3 class="text-xl font-bold text-green-800 mb-2" data-cms-bind="values_value_1_title">Faith</h3>
-        <p class="text-gray-600" data-cms-bind="values_value_1_text">Our work is guided by faith, hope, and compassion for all people.</p>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="150">
-        <div class="text-green-700 mb-4"><i data-feather="check-circle" class="w-10 h-10 mx-auto"></i></div>
-        <h3 class="text-xl font-bold text-green-800 mb-2" data-cms-bind="values_value_2_title">Integrity</h3>
-        <p class="text-gray-600" data-cms-bind="values_value_2_text">We operate with transparency and accountability to our donors and the communities we serve.</p>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="300">
-        <div class="text-green-700 mb-4"><i data-feather="sun" class="w-10 h-10 mx-auto"></i></div>
-        <h3 class="text-xl font-bold text-green-800 mb-2" data-cms-bind="values_value_3_title">Empowerment</h3>
-        <p class="text-gray-600" data-cms-bind="values_value_3_text">We provide tools and training to empower individuals toward self-sufficiency.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-20 bg-white">
-  <div class="container mx-auto px-6 max-w-4xl">
-    <div class="text-center mb-16">
-      <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4" data-cms-bind="leadership_title">Leadership</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto" data-cms-bind="leadership_subtitle">The team dedicated to our mission</p>
-    </div>
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div data-aos="fade-right">
-        <img src="images/about page/leadership.jpg" alt="Leadership" class="rounded-xl shadow-lg" data-cms-bind="leadership_image">
-      </div>
-      <div data-aos="fade-left">
-        <p class="text-gray-700 mb-4" data-cms-bind="leadership_text_1">
-          American Education and Teachers is guided by dedicated leaders in both Africa and the USA. Together, they ensure accountability, transparency, and long-term sustainability in every initiative.
-        </p>
-        <p class="text-gray-700" data-cms-bind="leadership_text_2">
-          Their vision is rooted in faith, compassion, and a firm belief that communities can rise when given the right tools, resources, and opportunities.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="py-20 bg-green-800 text-white text-center">
-  <div class="container mx-auto px-6">
-    <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6" data-cms-bind="cta_title">Be Part of the Story</h2>
-    <p class="max-w-2xl mx-auto mb-8 text-lg" data-cms-bind="cta_text">
-      Your support allows us to continue transforming lives. Whether through donations, volunteering, or spreading the word — you are bringing hope to families in Africa.
-    </p>
-    <a href="get-involved.html" class="bg-white text-green-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100" data-cms-bind="cta_link">Get Involved</a>
-  </div>
-</section>
-
-<footer class="bg-gray-900 text-white pt-16 pb-8">
-  <div class="container mx-auto px-6">
-    <div class="grid md:grid-cols-4 gap-10 mb-12">
-      <div>
-        <a href="index.html"><img src="images/logo1.png" alt="Bringing Hope to the Family Logo" class="h-16 mb-4" data-cms-bind="footer_logo"></a>
-        <p class="text-gray-400" data-cms-bind="footer_mission">Changing families from dependency to self-sustainability in Africa.</p>
-      </div>
-
-      <div>
-        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
-        <ul class="space-y-2">
-          <li><a href="index.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_home">Home</a></li>
-          <li><a href="about.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_about">About Us</a></li>
-          <li><a href="programs.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_programs">Our Programs</a></li>
-          <li><a href="get-involved.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_involved">Get Involved</a></li>
-          <li><a href="donate.html" class="text-gray-400 hover:text-white" data-cms-bind="footer_link_donate">Donate</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_programs_title">Programs</h4>
-        <ul class="space-y-2">
-          <li><a href="programs.html#education" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_education">Education</a></li>
-          <li><a href="programs.html#medical" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_medical">Medical Care</a></li>
-          <li><a href="programs.html#relief" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_relief">Emergency Relief</a></li>
-          <li><a href="programs.html#scholarships" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_scholarships">Scholarships</a></li>
-          <li><a href="programs.html#sustainability" class="text-gray-400 hover:text-white" data-cms-bind="footer_program_sustainability">Sustainability</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_contact_title">Contact Us</h4>
-        <ul class="space-y-2 text-gray-400">
-          <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
-          <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span data-cms-bind="footer_location">USA & Africa Offices</span></li>
-        </ul>
-        <div class="mt-4 flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i data-feather="facebook" class="w-5 h-5"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i data-feather="instagram" class="w-5 h-5"></i></a>
-          <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i data-feather="twitter" class="w-5 h-5"></i></a>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="images/logo1.png" alt="AEaT Logo" class="h-16" data-cms-bind="nav_logo">
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_home">Home</a>
+                <a href="about.html" class="text-green-800 font-medium" data-cms-bind="nav_about">About</a>
+                <a href="programs.html" class="text-gray-600 hover:text-green-800"
+                    data-cms-bind="nav_programs">Programs</a>
+                <a href="get-involved.html" class="text-gray-600 hover:text-green-800" data-cms-bind="nav_involved">Get
+                    Involved</a>
+                <a href="contact.html" class="text-gray-600 hover:text-green-800"
+                    data-cms-bind="nav_contact">Contact</a>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-      <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education and Teachers. All rights reserved.</p>
-      <div class="flex space-x-6">
-        <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy Policy</a>
-        <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of Service</a>
-      </div>
-    </div>
-  </div>
-</footer>
+    <section class="relative h-96 flex items-center justify-center text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <img src="images/about page/pexels-akoonie-27586359.jpg" alt="About Us" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+            <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Our Story</h1>
+            <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100">Changing families from dependency to self sustainability in Africa.</p>
+        </div>
+    </section>
 
-<script>
-  AOS.init({ duration: 800, once: true });
-  feather.replace();
-</script>
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4" data-aos="fade-up">
+                    Our Mission</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Serving the underserved with sustainable solutions
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">Who We Are</h3>
+                    <p class="text-gray-700 mb-6">American Education and Teachers (AEaT) is a faith-based non-profit organization dedicated to empowering orphans and vulnerable families.</p>
+                    <p class="text-gray-700 mb-6">Our organization is rooted in the community it serves. We work hand-in-hand with local leaders to deliver comprehensive programs in education, medical care, and economic sustainability.</p>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="images/about page/allen-meki-rOCgRdENX54-unsplash.jpg" alt="Community" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-12">Our Core Values</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div data-aos="fade-up">
+                    <div class="text-green-700 mb-4"><i data-feather="heart" class="w-10 h-10 mx-auto"></i></div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Faith</h3>
+                    <p class="text-gray-600">Our work is guided by faith, hope, and compassion for all people.</p>
+                </div>
+                
+                <div data-aos="fade-up">
+                    <div class="text-green-700 mb-4"><i data-feather="check-circle" class="w-10 h-10 mx-auto"></i></div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Integrity</h3>
+                    <p class="text-gray-600">We operate with transparency and accountability to our donors and the communities we serve.</p>
+                </div>
+                
+                <div data-aos="fade-up">
+                    <div class="text-green-700 mb-4"><i data-feather="sun" class="w-10 h-10 mx-auto"></i></div>
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Empowerment</h3>
+                    <p class="text-gray-600">We provide tools and training to empower individuals toward self-sufficiency.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-4">Leadership</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">The team dedicated to our mission</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <img src="images/about page/leadership.jpg" alt="Leadership" class="rounded-xl shadow-lg">
+                </div>
+                <div data-aos="fade-left">
+                    <p class="text-gray-700 mb-4">American Education and Teachers is guided by dedicated leaders in both Africa and the USA. Together, they ensure accountability, transparency, and long-term sustainability in every initiative.</p>
+                    <p class="text-gray-700">Their vision is rooted in faith, compassion, and a firm belief that communities can rise when given the right tools, resources, and opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-green-800 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Be Part of the Story</h2>
+            <p class="max-w-2xl mx-auto mb-8 text-lg">Your support allows us to continue transforming lives. Whether through donations, volunteering, or spreading the word — you are bringing hope to families in Africa.</p>
+            <a href="get-involved.html"
+                class="bg-white text-green-800 font-bold py-3 px-8 rounded-full hover:bg-gray-100">Get Involved</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <a href="index.html"><img src="images/logo1.png" alt="Bringing Hope to the Family Logo"
+                            class="h-16 mb-4" data-cms-bind="footer_logo"></a>
+                    <p class="text-gray-400" data-cms-bind="footer_mission">Changing families from dependency to
+                        self-sustainability in Africa.</p>
+                </div>
+
+                <div>
+                    <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_links_title">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_link_home">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_link_about">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_link_programs">Our Programs</a></li>
+                        <li><a href="get-involved.html" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_link_involved">Get Involved</a></li>
+                        <li><a href="donate.html" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_link_donate">Donate</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_programs_title">Programs</h4>
+                    <ul class="space-y-2">
+                        <li><a href="programs.html#education" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_program_education">Education</a></li>
+                        <li><a href="programs.html#medical" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_program_medical">Medical Care</a></li>
+                        <li><a href="programs.html#relief" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_program_relief">Emergency Relief</a></li>
+                        <li><a href="programs.html#scholarships" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_program_scholarships">Scholarships</a></li>
+                        <li><a href="programs.html#sustainability" class="text-gray-400 hover:text-white"
+                                data-cms-bind="footer_program_sustainability">Sustainability</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="heading-font text-lg font-bold mb-4" data-cms-bind="footer_contact_title">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start"><i data-feather="mail" class="w-4 h-4 mt-1 mr-2"></i> <span
+                                data-cms-bind="footer_email">americaneducationandstudents@gmail.com</span></li>
+                        <li class="flex items-start"><i data-feather="map-pin" class="w-4 h-4 mt-1 mr-2"></i> <span
+                                data-cms-bind="footer_location">USA & Africa Offices</span></li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_facebook"><i
+                                data-feather="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_instagram"><i
+                                data-feather="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white" data-cms-bind="footer_social_twitter"><i
+                                data-feather="twitter" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0" data-cms-bind="footer_copyright">© 2025 American Education
+                    and Teachers. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_privacy">Privacy
+                        Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm" data-cms-bind="footer_terms">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({ duration: 800, once: true });
+        feather.replace();
+    </script>
 </body>
+
 </html>

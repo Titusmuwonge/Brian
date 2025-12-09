@@ -1,0 +1,131 @@
+{
+    "slug": "get-involved",
+    "title": "Get Involved",
+    "hero": {
+        "title": "Get Involved",
+        "subtitle": "Join us in transforming lives in Africa",
+        "image": "images/get-involved page/Volunteers.jpg"
+    },
+    "ways": {
+        "title": "Ways to Make a Difference",
+        "intro": "Your support helps us continue our life-changing work all over the continent.",
+        "items": [
+            {
+                "icon": "dollar-sign",
+                "title": "Give Financially",
+                "text": "Your donations provide education, medical care, food, and shelter for children in need.",
+                "linkText": "Donate Now",
+                "linkUrl": "donate.html"
+            },
+            {
+                "icon": "user-plus",
+                "title": "Sponsor a Child",
+                "text": "Change a child's life through monthly sponsorship providing education, healthcare, and basic needs.",
+                "linkText": "Learn More",
+                "linkUrl": "contact.html"
+            },
+            {
+                "icon": "users",
+                "title": "Volunteer",
+                "text": "Use your skills and time to make an impact, either in Africa or remotely from your home.",
+                "linkText": "Volunteer",
+                "linkUrl": "contact.html"
+            },
+            {
+                "icon": "heart",
+                "title": "Other Ways",
+                "text": "Fundraise, advocate, include us in your will, or donate stocks - there are many ways to help!",
+                "linkText": "Explore Options",
+                "linkUrl": "contact.html"
+            }
+        ]
+    },
+    "sponsor": {
+        "title": "Sponsor a Child",
+        "intro": "Child sponsorship provides education, healthcare, nutrition, and hope to vulnerable children in Africa. For just $39/month, you can transform a child's life.",
+        "items": [
+            {
+                "icon": "book",
+                "title": "Quality Education",
+                "text": "Covers school fees, uniforms, supplies, and tutoring for your sponsored child."
+            },
+            {
+                "icon": "activity",
+                "title": "Healthcare",
+                "text": "Provides medical checkups, treatment, and preventive care."
+            },
+            {
+                "icon": "home",
+                "title": "Basic Needs",
+                "text": "Ensures nutritious meals, clean water, and safe shelter."
+            }
+        ],
+        "linkText": "Sponsor a Child Today",
+        "linkUrl": "contact.html"
+    },
+    "volunteer": {
+        "title": "Volunteer Opportunities",
+        "intro": "Share your skills and time to make a lasting impact",
+        "local": {
+            "image": "images/get-involved page/Local.jpg",
+            "title": "Volunteer in person",
+            "intro": "Serve on-site at our facilities in Africa. Opportunities include:",
+            "items": [
+                "Teaching in our schools",
+                "Medical care at our clinic",
+                "Vocational training instruction",
+                "Construction and maintenance",
+                "Administrative support"
+            ],
+            "linkText": "Apply to Volunteer",
+            "linkUrl": "contact.html"
+        },
+        "remote": {
+            "image": "images/get-involved page/Remote.jpg",
+            "title": "Remote Volunteering",
+            "intro": "Make an impact from wherever you are. Opportunities include:",
+            "items": [
+                "Grant writing and research",
+                "Social media and marketing",
+                "Website development",
+                "Sponsorship correspondence",
+                "Fundraising campaigns"
+            ],
+            "linkText": "Apply to Volunteer",
+            "linkUrl": "contact.html"
+        }
+    },
+    "fundraising": {
+        "title": "Fundraising",
+        "intro": "Create your own fundraiser to support our programs",
+        "items": [
+            {
+                "icon": "birthday-cake",
+                "title": "Birthday Fundraiser",
+                "text": "Ask friends to donate to AEaT instead of giving gifts for your birthday.",
+                "linkText": "Start Birthday Fundraiser",
+                "linkUrl": "contact.html"
+            },
+            {
+                "icon": "run",
+                "title": "Athletic Event",
+                "text": "Run, bike, or swim for a cause. Get sponsored for your athletic challenge.",
+                "linkText": "Start Athletic Fundraiser",
+                "linkUrl": "contact.html"
+            },
+            {
+                "icon": "home",
+                "title": "Community Event",
+                "text": "Host a dinner, concert, or silent auction to benefit AEaT.",
+                "linkText": "Start Community Fundraiser",
+                "linkUrl": "contact.html"
+            }
+        ],
+        "supportBox": {
+            "title": "Need Help With Your Fundraiser?",
+            "text": "Our team can provide materials, ideas, and support to make your fundraiser successful.",
+            "linkText": "Contact Our Fundraising Team",
+            "linkUrl": "contact.html"
+        }
+    }
+}

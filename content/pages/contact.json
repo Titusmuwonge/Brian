@@ -1,0 +1,42 @@
+{
+    "slug": "contact",
+    "title": "Contact Us",
+    "hero": {
+        "title": "Contact Us",
+        "subtitle": "We would love to hear from you",
+        "image": "images/contact page/Hero.jpg"
+    },
+    "contactInfo": {
+        "title": "Contact Information",
+        "text": "Feel free to reach out to us with any questions about our programs, donations, or volunteering. Our team is ready to assist you.",
+        "items": [
+            {
+                "icon": "mail",
+                "title": "Email",
+                "text": "americaneducationandstudents@gmail.com"
+            },
+            {
+                "icon": "phone",
+                "title": "Phone (Uga)",
+                "text": "0758 089738"
+            },
+            {
+                "icon": "map-pin",
+                "title": "USA Address",
+                "text": "P.O Box 491, Hilliard OH 43026"
+            }
+        ]
+    },
+    "form": {
+        "title": "Send Us a Message",
+        "nameLabel": "Name",
+        "emailLabel": "Email",
+        "subjectLabel": "Subject",
+        "messageLabel": "Message",
+        "buttonText": "Send Message"
+    },
+    "map": {
+        "title": "Our Location",
+        "iframeSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.65882650893!2d30.9329712!3d0.6406213999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17743d1a49419c8f%3A0xf639a04a434c382!2sBringing%20Hope%20To%20The%20Family!5e0!3m2!1sen!2sug!4v1709121696081!5m2!1sen!2sug"
+    }
+}

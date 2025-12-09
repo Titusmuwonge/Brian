@@ -10,8 +10,6 @@
     "serve": "^14.2.1"
   },
   "devDependencies": {
-    "@stackbit/cms-git": "^1.0.35",
-    "@stackbit/types": "^2.1.14",
-    "typescript": "^5.9.3"
+    "typescript": "^5.7.2"
   }
 }

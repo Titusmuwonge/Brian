@@ -1,0 +1,97 @@
+{
+    "slug": "programs",
+    "title": "Our Programs",
+    "hero": {
+        "title": "Our Programs",
+        "subtitle": "Comprehensive solutions to transform lives in Africa",
+        "image": "images/programs page/Our programs.jpg"
+    },
+    "education": {
+        "title": "Education Programs",
+        "introText": "Education is the foundation for breaking the cycle of poverty. Our schools provide quality education to orphans and vulnerable children, with specialized programs for children with disabilities.",
+        "image": "images/programs page/Education.jpg",
+        "items": [
+            {
+                "icon": "book-open",
+                "title": "Our Primary Schools",
+                "text": "Serving over 300 students with quality primary education, including specialized classes for children with disabilities."
+            },
+            {
+                "icon": "tool",
+                "title": "Training Institutes",
+                "text": "Provides marketable skills in tailoring, carpentry, knitting, and more for youth who cannot afford traditional schooling."
+            },
+            {
+                "icon": "award",
+                "title": "Scholarship Program",
+                "text": "Supports secondary and university education for qualifying students to pursue higher education."
+            }
+        ]
+    },
+    "medical": {
+        "title": "Medical Care Programs",
+        "introText": "Access to healthcare is critical for the well-being of children and families in our community. Our medical programs address both immediate health needs and long-term wellness.",
+        "image": "images/programs page/Medical.jpg",
+        "items": [
+            {
+                "icon": "heart",
+                "title": "Medical Clinics",
+                "text": "Provides general medical care, HIV/AIDS treatment, maternal health services, and health education to over 500 patients monthly."
+            },
+            {
+                "icon": "shield",
+                "title": "HIV/AIDS Treatment Program",
+                "text": "Comprehensive care including antiretroviral therapy, counseling, and nutritional support for HIV+ individuals."
+            },
+            {
+                "icon": "alert-circle",
+                "title": "Emergency Medical Fund",
+                "text": "Provides financial assistance for critical medical needs including surgeries, cancer treatment, and congenital conditions."
+            }
+        ]
+    },
+    "childrensHome": {
+        "title": "Children's Home",
+        "introText": "A safe, loving environment for orphans and vulnerable children who have no other family to care for them.",
+        "image": "images/programs page/Children's home.jpg",
+        "items": [
+            {
+                "icon": "home",
+                "title": "Residential Care",
+                "text": "Provides housing, nutrition, healthcare, and emotional support for children ages 2 months to 17 years."
+            },
+            {
+                "icon": "users",
+                "title": "Family-Style Living",
+                "text": "Children live in small groups with dedicated caregivers to create a family environment."
+            },
+            {
+                "icon": "smile",
+                "title": "Holistic Development",
+                "text": "Focuses on spiritual, emotional, physical, and educational growth for each child."
+            }
+        ]
+    },
+    "sustainability": {
+        "title": "Sustainability Programs",
+        "introText": "Long-term solutions that create self-sufficiency for individuals and the organization.",
+        "image": "images/programs page/Sustainability.jpeg",
+        "items": [
+            {
+                "icon": "package",
+                "title": "Our Farms",
+                "text": "Extensive farm land producing food for our programs while teaching sustainable agriculture techniques."
+            },
+            {
+                "icon": "dollar-sign",
+                "title": "Income-Generating Projects",
+                "text": "Includes vocational graduate businesses, farm produce sales, and craft production to support our programs."
+            },
+            {
+                "icon": "repeat",
+                "title": "Community Development",
+                "text": "Partners with local families to improve economic stability through microloans and skills training."
+            }
+        ]
+    }
+}

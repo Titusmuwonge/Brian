@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-cms-bind="page_title">Our Programs | American Education and Teachers</title>
+    <title data-cms-bind="page_title">{{title}} | American Education and Teachers</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
@@ -103,10 +103,10 @@
 
     <section class="relative h-96 flex items-center justify-center text-white">
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <img src="images/programs page/Our programs.jpg" alt="Our Programs" class="absolute inset-0 w-full h-full object-cover">
+        <img src="{{hero.image}}" alt="Our Programs" class="absolute inset-0 w-full h-full object-cover">
         <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
-            <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Our Programs</h1>
-            <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100">Comprehensive solutions to transform lives in Africa</p>
+            <h1 class="heading-font text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">{{hero.title}}</h1>
+            <p class="text-lg md:text-xl" data-aos="fade-up" data-aos-delay="100">{{hero.subtitle}}</p>
         </div>
     </section>
 
@@ -115,45 +115,25 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
                     <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">
-                        Education Programs</h2>
-                    <p class="text-gray-700 mb-6">Education is the foundation for breaking the cycle of poverty. Our schools provide quality education to orphans and vulnerable children, with specialized programs for children with disabilities.</p>
+                        {{education.title}}</h2>
+                    <p class="text-gray-700 mb-6">{{education.introText}}</p>
                     <div class="space-y-6">
-                        
+                        {{#education.items}}
                         <div class="flex items-start">
                             <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="book-open" class="text-green-700 w-5 h-5"></i>
+                                <i data-feather="{{icon}}" class="text-green-700 w-5 h-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Our Primary Schools</h4>
-                                <p class="text-gray-700">Serving over 300 students with quality primary education, including specialized classes for children with disabilities.</p>
+                                <h4 class="font-bold text-gray-800 mb-1">{{title}}</h4>
+                                <p class="text-gray-700">{{text}}</p>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="tool" class="text-green-700 w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Training Institutes</h4>
-                                <p class="text-gray-700">Provides marketable skills in tailoring, carpentry, knitting, and more for youth who cannot afford traditional schooling.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="award" class="text-green-700 w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Scholarship Program</h4>
-                                <p class="text-gray-700">Supports secondary and university education for qualifying students to pursue higher education.</p>
-                            </div>
-                        </div>
-                        
+                        {{/education.items}}
                     </div>
                 </div>
                 <div class="md:w-1/2" data-aos="fade-left">
                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="images/programs page/Education.jpg" alt="Education Program" class="w-full h-96 object-cover">
+                        <img src="{{education.image}}" alt="Education Program" class="w-full h-96 object-cover">
                     </div>
                 </div>
             </div>
@@ -165,45 +145,25 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 order-2 md:order-1" data-aos="fade-right">
                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="images/programs page/Medical.jpg" alt="Medical Program" class="w-full h-96 object-cover">
+                        <img src="{{medical.image}}" alt="Medical Program" class="w-full h-96 object-cover">
                     </div>
                 </div>
                 <div class="md:w-1/2 md:pl-10 order-1 md:order-2" data-aos="fade-left">
                     <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">
-                        Medical Care Programs</h2>
-                    <p class="text-gray-700 mb-6">Access to healthcare is critical for the well-being of children and families in our community. Our medical programs address both immediate health needs and long-term wellness.</p>
+                        {{medical.title}}</h2>
+                    <p class="text-gray-700 mb-6">{{medical.introText}}</p>
                     <div class="space-y-6">
-                        
+                        {{#medical.items}}
                         <div class="flex items-start">
                             <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="heart" class="text-green-700 w-5 h-5"></i>
+                                <i data-feather="{{icon}}" class="text-green-700 w-5 h-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Medical Clinics</h4>
-                                <p class="text-gray-700">Provides general medical care, HIV/AIDS treatment, maternal health services, and health education to over 500 patients monthly.</p>
+                                <h4 class="font-bold text-gray-800 mb-1">{{title}}</h4>
+                                <p class="text-gray-700">{{text}}</p>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="shield" class="text-green-700 w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">HIV/AIDS Treatment Program</h4>
-                                <p class="text-gray-700">Comprehensive care including antiretroviral therapy, counseling, and nutritional support for HIV+ individuals.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="alert-circle" class="text-green-700 w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Emergency Medical Fund</h4>
-                                <p class="text-gray-700">Provides financial assistance for critical medical needs including surgeries, cancer treatment, and congenital conditions.</p>
-                            </div>
-                        </div>
-                        
+                        {{/medical.items}}
                     </div>
                 </div>
             </div>
@@ -215,45 +175,25 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
                     <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">
-                        Children's Home</h2>
-                    <p class="text-gray-700 mb-6">A safe, loving environment for orphans and vulnerable children who have no other family to care for them.</p>
+                        {{childrensHome.title}}</h2>
+                    <p class="text-gray-700 mb-6">{{childrensHome.introText}}</p>
                     <div class="space-y-6">
-                        
+                        {{#childrensHome.items}}
                         <div class="flex items-start">
                             <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="home" class="text-green-700 w-5 h-5"></i>
+                                <i data-feather="{{icon}}" class="text-green-700 w-5 h-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Residential Care</h4>
-                                <p class="text-gray-700">Provides housing, nutrition, healthcare, and emotional support for children ages 2 months to 17 years.</p>
+                                <h4 class="font-bold text-gray-800 mb-1">{{title}}</h4>
+                                <p class="text-gray-700">{{text}}</p>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="users" class="text-green-700 w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Family-Style Living</h4>
-                                <p class="text-gray-700">Children live in small groups with dedicated caregivers to create a family environment.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="smile" class="text-green-700 w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Holistic Development</h4>
-                                <p class="text-gray-700">Focuses on spiritual, emotional, physical, and educational growth for each child.</p>
-                            </div>
-                        </div>
-                        
+                        {{/childrensHome.items}}
                     </div>
                 </div>
                 <div class="md:w-1/2" data-aos="fade-left">
                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="images/programs page/Children's home.jpg" alt="Children's Home Program"
+                        <img src="{{childrensHome.image}}" alt="Children's Home Program"
                             class="w-full h-96 object-cover">
                     </div>
                 </div>
@@ -266,46 +206,26 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 order-2 md:order-1" data-aos="fade-right">
                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="images/programs page/Sustainability.jpeg" alt="Sustainability Program"
+                        <img src="{{sustainability.image}}" alt="Sustainability Program"
                             class="w-full h-96 object-cover">
                     </div>
                 </div>
                 <div class="md:w-1/2 md:pl-10 order-1 md:order-2" data-aos="fade-left">
                     <h2 class="heading-font text-3xl md:text-4xl font-bold text-green-800 mb-6">
-                        Sustainability Programs</h2>
-                    <p class="text-gray-700 mb-6">Long-term solutions that create self-sufficiency for individuals and the organization.</p>
+                        {{sustainability.title}}</h2>
+                    <p class="text-gray-700 mb-6">{{sustainability.introText}}</p>
                     <div class="space-y-6">
-                        
+                        {{#sustainability.items}}
                         <div class="flex items-start">
                             <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="package" class="text-green-700 w-5 h-5"></i>
+                                <i data-feather="{{icon}}" class="text-green-700 w-5 h-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Our Farms</h4>
-                                <p class="text-gray-700">Extensive farm land producing food for our programs while teaching sustainable agriculture techniques.</p>
+                                <h4 class="font-bold text-gray-800 mb-1">{{title}}</h4>
+                                <p class="text-gray-700">{{text}}</p>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="dollar-sign" class="text-green-700 w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Income-Generating Projects</h4>
-                                <p class="text-gray-700">Includes vocational graduate businesses, farm produce sales, and craft production to support our programs.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i data-feather="repeat" class="text-green-700 w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 mb-1">Community Development</h4>
-                                <p class="text-gray-700">Partners with local families to improve economic stability through microloans and skills training.</p>
-                            </div>
-                        </div>
-                        
+                        {{/sustainability.items}}
                     </div>
                 </div>
             </div>
