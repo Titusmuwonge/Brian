@@ -1,0 +1,31 @@
+{
+    "slug": "index",
+    "title": "AEaT | Uganda Nonprofit Organization",
+    "hero": {
+        "title": "American Education and Teachers",
+        "subtitle": "Changing families from dependency to self-sustainability",
+        "image": "images/Home page/Hero.jpeg",
+        "buttons": {
+            "donate": {
+                "text": "Donate Now",
+                "url": "donate.html"
+            },
+            "learnMore": {
+                "text": "Learn More",
+                "url": "about.html"
+            }
+        }
+    },
+    "about": {
+        "title": "Our Mission",
+        "paragraph": "American Education and Teachers is a non-governmental organization dedicated to empowering communities in Africa. Founded in 2024, our mission is to create a pathway for families to transition from dependency to self-sustainability through a focus on education and teacher development.",
+        "buttonText": "Our Story",
+        "buttonUrl": "about.html",
+        "images": [
+            "images/Home page/1.jpg",
+            "images/Home page/2.jpg",
+            "images/Home page/3.jpg",
+            "images/Home page/4.jpg"
+        ]
+    }
+}
